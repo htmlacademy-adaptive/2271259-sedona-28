@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Kirill Mezentsev](https://up.htmlacademy.ru/adaptive/28/user/2271259).
-* Наставник: `Евгений Бервяченок`.
+* Наставник: [Евгений Бервяченок](https://htmlacademy.ru/profile/jackson).
 
 ---
 
