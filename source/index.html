@@ -1,10 +1,211 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <title>Седона</title>
   </head>
-  <body>
+  <body class="page__body">
+    <header class="main-header">
+      <div class="main-nav">
+        <div class="main-nav__wrapper">
+
+          <ul class="main-header-nav__list left-part">
+            <li class="main-header-nav__item current">
+              <a href="#">
+                главная
+              </a>
+            </li>
+            <li class="main-header-nav__item">
+              <a href="catalog.html">
+                фото и видео
+              </a>
+            </li>
+          </ul>
+
+          <div class="main-header-nav__list">
+            <a href="#" class="main-header-nav__logo">
+              <img src="img/logo.jpg" height="96" width="185" alt="logo Sedona" class="main-header-nav__logo-image">
+            </a>
+          </div>
+
+          <ul class="main-header-nav__list right-part">
+            <li class="main-header-nav__item">
+              <a href="#">
+                форма отзыва
+              </a>
+            </li>
+            <li class="main-header-nav__item">
+              <a href="#">
+                html academy
+              </a>
+            </li>
+          </ul>
+
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">
+            Open Menu
+          </span>
+        </button>
+
+      </div>
+      </div>
+    </header>
+
+    <main class="main-container">
+      <div class="main-container__hero">
+        <h1 class="visually-hidden">
+          photo
+        </h1>
+        <img src="img/back-desktop.jpg" alt="photo of mountains" class="hero-image image">
+        <img src="img/welcome.jpg" alt="welcome-text" class="hero-text">
+      </div>
+
+      <section class="desc">
+        <h2 class="visually-hidden">
+          description
+        </h2>
+        <div class="desc__wrapper">
+          <h2 class="desc-title">
+            седона — небольшой городок в аризоне,<br> заслуживающий большего!
+          </h2>
+          <p class="desc-text">
+            рассмотрим 5 причин, по которым седона круче, чем гранд каньон!
+          </p>
+        </div>
+      </section>
+
+      <section class="features">
+        <h2 class="visually-hidden">
+          features
+        </h2>
+        <div class="features__wrapper">
+
+          <section class="primary-features">
+            <div class="primary-features feature">
+              <h3 class="primary-features__title title">
+                настоящий<br>городок
+              </h3>
+              <p class="primary-features__num">
+                — №1 —
+              </p>
+              <p class="primary-features__text text">
+                седона не аттракцион для туристов,<br> там течет своя жизнь
+              </p>
+            </div>
+           <img src="img/photo of bar.jpg" height="256" width="800" alt="photo of bar" class="primary-features__img">
+          </section>
+
+          <section class="secondary-features">
+            <ul class="secondary-features__list">
+              <li class="secondary-features__item">
+                <img src="img/icons/icon-house.svg" alt="icon of house" class="secondary-features__icon icon">
+                <h2 class="secondary-features__title">
+                  жилье
+                </h2>
+                <p class="secondary-features__text">
+                  рекомендуем пожить в настоящем<br> мотеле, все как в кино!
+                </p>
+              </li>
+              <li class="secondary-features__item">
+                <img src="img/icons/icon-burger.svg" alt="icon of burger" class="secondary-features__icon icon">
+                <h2 class="secondary-features__title">
+                  еда
+                </h2>
+                <p class="secondary-features__text">
+                  всегда заказывайте фирменный бургер,<br>вы не разочаруетесь!
+                </p>
+              </li>
+              <li class="secondary-features__item">
+                <img src="img/icons/icon-gift.svg" alt="icon of gift" class="secondary-features__icon icon">
+                <h2 class="secondary-features__title">
+                  сувениры
+                </h2>
+                <p class="secondary-features__text">
+                  не только китайского,<br> но и местного производства!
+                </p>
+              </li>
+            </ul>
+          </section>
+
+          <section class="terciary-features">
+            <img src="img/rock-bridge.jpg" height="256" width="800" alt="photo of rock bridge" class="terciary-features__img">
+            <div class="terciary-features feature">
+              <h3 class="terciary-features__title title">
+                там есть<br> мост дьявола
+              </h3>
+              <p class="terciary-features__num">
+                — №2 —
+              </p>
+              <p class="terciary-features__text text">
+                да, по нему можно пройти!<br> если вы осмелитесь, конечно
+              </p>
+            </div>
+          </section>
+
+          <section class="fourth-features">
+            <ul class="fourth-features__list">
+              <li class="fourth-features__item">
+                <h3 class="fourth-features__title title">
+                  небольшая<br> площадь
+                </h3>
+                <p class="fourth-features__num">
+                  — №3 —
+                </p>
+                <p class="fourth-features__text text">
+                  все интересные места находятся очень<br> близко
+                </p>
+              </li>
+              <li class="fourth-features__item">
+                <h3 class="fourth-features__title title">
+                  красивая<br> дорога
+                </h3>
+                <p class="fourth-features__num">
+                  — №4 —
+                </p>
+                <p class="fourth-features__text text">
+                  ехать в седону из лас вегаса совсем<br> не скучно!
+                </p>
+              </li>
+              <li class="fourth-features__item">
+                <h3 class="fourth-features__title title">
+                  мало туристов
+                </h3>
+                <p class="fourth-features__num">
+                  — №5 —
+                </p>
+                <p class="fourth-features__text text">
+                  большинство едет в гранд каньон и толпится там
+                </p>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </section>
+
+      <section class="cta">
+        <div class="cta__wrapper">
+          <h2 class="visually-hidden">
+            CTA
+          </h2>
+          <div class="cta-block">
+            <h2 class="cta-block__title">
+              заинтересовались?
+            </h2>
+            <p class="cta-block__text">
+              кажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне
+            </p>
+            <button class="cta-block__button button">
+              найти гостиницу
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="map">
+        <div class="map__wrapper">
+          <img src="img/map-desktop.jpg.jpg" alt="map from google" class="map-img">
+        </div>
+      </section>
 
 <<<<<<< Updated upstream
     <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
