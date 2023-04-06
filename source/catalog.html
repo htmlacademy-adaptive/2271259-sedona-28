@@ -52,19 +52,15 @@
    </div>
   </header>
 
-  <main class="catalog-">
-    <div class="catalog-promo">
-      <h1 class="visually-hidden">
-        photo
-      </h1>
-      <img src="img/text-sedona.jpg" alt="sedona-text" class="catalog__text">
-    </div>
+  <main class="catalog">
+    <h1 class="visually-hidden">
+      photo
+    </h1>
+
+      <img src="img/text-sedona.jpg" alt="sedona-text" class="catalog__img">
+
 
     <section class="catalog-desc">
-
-      <h2 class="visually-hidden">
-        description
-      </h2>
 
       <div class="catalog-desc__wrapper">
 
@@ -80,106 +76,94 @@
 
     </section>
 
-    <section class="photo-proofs">
+    <section class="photos">
 
       <h2 class="visually-hidden">
         Photos
       </h2>
-      <div class="photo-proofs__wrapper">
+      <div class="photos__wrapper">
 
-        <div class="primary-photo__proofs">
+         <ul class="photos__list">
 
-          <img src="img/photo-1.jpg" alt="photo of road" class="photo-proofs__img">
+          <li class="photos__item photo-card">
+              <img src="img/photo-1-mobile.jpg" alt="photo of cactus" class="photos__img">
 
-          <div class="primary-photo__description">
-            <h3 class="photo-photo__title">
-              неродные просторы
-            </h3>
-            <p class="photo-photo__author">
-              автор фото: борис
-            </p>
-          </div>
+              <h3 class="photos__title">
+                неродные просторы
+              </h3>
+              <p class="photos__author">
+                автор фото: борис
+              </p>
 
-          <div class="primary-photo__likes">
-            <img src="img/icons/icon-like.svg" alt="icon of like" class="icon-like">
-            <p class="likes">
-              1350
-            </p>
-          </div>
+              <img src="img/icons/icon-like.svg" alt="icon of like" class="photos__icon-like">
+              <p class="photos__number-likes">
+                1350
+              </p>
 
-        </div>
+          </li>
+          <li class="photos__item photo-card">
+              <img src="img/photo-2-mobile.jpg" alt="photo of cactus" class="photos__img">
 
-        <div class="secondary-photo__proofs">
-
-          <ul class="secondary-photo__proofs-list">
-
-            <li class="secondary-photo__proofs-item">
-              <img src="img/photo-2.jpg" alt="photo of cactus" class="item-photo">
-            <div class="secondary-photo__description">
-              <h3 class="photo-title">
+              <h3 class="photos__title">
                 местная растительность
               </h3>
-              <p class="photo-author">
+              <p class="photos__author">
                 Автор фото: Сергей
               </p>
-            </div>
-            <div class="secondary-photo__likes">
-              <img src="img/icons/icon-like.svg" alt="icon of like" class="icon-like">
-              <p class="likes">
+
+              <img src="img/icons/icon-like.svg" alt="icon of like" class="photos__icon-like">
+              <p class="photos__number-likes">
                 143
               </p>
-            </div>
+
           </li>
 
-          <li class="secondary-photo__proofs-item">
-            <img src="img/photo-3.jpg" alt="photo of forest" class="item-photo">
-            <div class="secondary-photo__description">
-              <h3 class="photo-title">
+          <li class="photos__item photo-card">
+            <img src="img/photo-3-mobile.jpg" alt="photo of forest" class="photos__img">
+
+              <h3 class="photos__title">
                 Дорога на север
               </h3>
-              <p class="photo-author">
+              <p class="photos__author">
                 Автор фото: Петр
               </p>
-            </div>
-            <div class="secondary-photo__likes">
-              <img src="img/icons/icon-like.svg" alt="icon ofl like" class="icon-like">
-              <p class="likes">
+
+              <img src="img/icons/icon-like.svg" alt="icon ofl like" class="photos__icon-like">
+              <p class="photos__number-likes">
                 96
               </p>
-            </div>
+
           </li>
 
-          <li class="secondary-photo__proofs-item">
-            <img src="img/photo-4.jpg" alt="photo of mountains" class="item-photo">
-            <div class="secondary-photo__description">
-              <h3 class="photo-title">
+          <li class="photos__item photo-card">
+            <img src="img/photo-4-mobile.jpg" alt="photo of mountains" class="photos__img">
+
+              <h3 class="photos__title">
                 Мост дьявола
               </h3>
-              <p class="photo-author">
+              <p class="photos__author">
                 Автор фото: Антон
               </p>
-            </div>
-            <div class="secondary-photo__likes">
-              <img src="img/icons/icon-like.svg" alt="icon of like" class="icon-like">
-              <p class="likes">
+
+              <img src="img/icons/icon-like.svg" alt="icon of like" class="photos__icon-like">
+              <p class="photos__number-likes">
                 254
               </p>
-            </div>
+
           </li>
 
-        </ul>
+         </ul>
 
-        </div>
 
       </div>
 
     </section>
 
-    <section class="video-proof">
+    <section class="video">
       <h2 class="visually-hidden">Video</h2>
-      <div class="video-proof__wrapper">
+      <div class="video__wrapper">
 
-        <div class="video-proof__desc">
+        <div class="video__desc">
 
           <h2 class="video-proof__title">
             Все еще сомневаетесь?
@@ -190,10 +174,10 @@
           </p>
         </div>
 
-        <div class="video-proof__video">
+        <div class="video__video">
 
-          <img src="img/video-desktop.jpg.jpg" alt="image of cars" class="video-img">
-          <img src="img/icons/icon-play.svg" alt="icon of play" class="icon-play">
+          <img src="img/video-mobile.jpg" alt="image of cars" class="video__img">
+          <img src="img/icons/icon-play.svg" alt="icon of play" class="video__icon-play">
 
         </div>
       </div>
@@ -202,34 +186,32 @@
 
     <footer class="footer">
       <div class="footer__wrapper">
-        <div class="footer-block">
-          <p class="footer-block__hashtag">
+          <p class="footer__hashtag">
             #visitsedona
           </p>
-          <ul class="footer-block__list">
-            <li class="footer-block__item vk">
-              <a href="#" class="footer-block__social">
+          <ul class="footer__list">
+            <li class="footer__item footer__vk">
+              <a href="#" class="footer__social">
                 <img src="img/icons/icon-vk.svg" alt="icon of vkontakte">
               </a>
             </li>
-            <li class="footer-block__item tg">
-              <a href="#" class="footer-block__social">
+            <li class="footer__item footer__tg">
+              <a href="#" class="footer__social">
                 <img src="img/icons/icon-tg.svg" alt="icon of telegram">
               </a>
             </li>
-            <li class="footer-block__item yt">
-              <a href="#" class="footer-block__social">
+            <li class="footer__item footer__yt">
+              <a href="#" class="footer__social">
                 <img src="img/icons/icon-youtube.svg" alt="icon of youtube">
               </a>
             </li>
           </ul>
-          <p class="footer-block__text">
+          <p class="footer__text">
             разработано
           </p>
-          <a href="#" class="footer-block__link">
+          <a href="#" class="footer__link">
             <img src="img/icons/htmlacademy.svg" alt="icon of htmlacademy">
           </a>
-        </div>
       </div>
     </footer>
   </main>
