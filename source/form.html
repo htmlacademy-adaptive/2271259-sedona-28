@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sedona</title>
+</head>
+<body class="page__body">
+  <header class="main-header">
+    <div class="main-nav">
+      <div class="main-nav__wrapper">
+
+        <!-- <ul class="main-header-nav__list">
+          <li class="main-header-nav__item current">
+            <a href="index.html">
+              главная
+            </a>
+          </li>
+          <li class="main-header-nav__item">
+            <a href="#">
+              фото и видео
+            </a>
+          </li>
+        </ul> -->
+
+        <div class="main-header-nav__logo">
+          <a href="#" class="main-header-nav__logo-link">
+            <img src="img/logo.jpg" height="96" width="185" alt="logo Sedona" class="main-header-nav__logo-image">
+          </a>
+        </div>
+
+        <!-- <ul class="main-header-nav__list">
+          <li class="main-header-nav__item">
+            <a href="#">
+              форма отзыва
+            </a>
+          </li>
+          <li class="main-header-nav__item">
+            <a href="#">
+              html academy
+            </a>
+          </li>
+        </ul> -->
+
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">
+          Open Menu
+        </span>
+      </button>
+      </div>
+   </div>
+  </header>
+
+  <section class="opinion">
+    <div class="opinion__wrapper">
+      <h2 class="opinion__title">
+        Оставьте свой отзыв
+      </h2>
+      <p class="opinion__text">
+        Помогите нашим отелям стать лучше! <br>оставьте отзыв о них, а также о<br> посещенных<br> вами достопримечательностях
+      </p>
+    </div>
+
+  </section>
+
+  <section class="name-data">
+    <div class="name-data__wrapper">
+      <h2 class="name-data__title">
+        Представьтесь:
+      </h2>
+
+      <legend class="name-data__description">
+        ИМЯ*:
+      </legend>
+
+      <form action="#" class="name-data__inputs" method="post">
+        <input type="text" name="inputs-name" id="inputs-name" class="name-data__name" placeholder="Пётр">
+      </form>
+
+      <legend class="name-data__description">
+        ФАМИЛИЯ*:
+      </legend>
+
+      <form action="#" class="name-data__inputs" method="post">
+        <input type="text" name="inputs-surname" id="inputs-surname" class="name-data__surname" placeholder="Пустота">
+      </form>
+
+      <legend class="name-data__description">
+        Отчество:
+      </legend>
+
+      <form action="#" class="name-data__inputs" method="post">
+        <input type="text" name="inputs-second-name" id="inputs-second-name" class="name-data__second-name" placeholder="Викторович">
+      </form>
+
+    </div>
+  </section>
+
+  <section class="contact-data">
+    <div class="contact-data__wrapper">
+      <h2 class="contact-data__title">
+        Контактная информация:
+      </h2>
+      <legend class="contact-data__description">
+        Контактный телефон*:
+      </legend>
+
+      <form action="#" class="contact-data__inputs" method="post">
+        <input type="text" name="inputs-phone" id="inputs-phone" class="contact-data__name" placeholder="Введите телефон">
+      </form>
+
+      <legend class="contact-data__description">
+        Электронная почта*:
+      </legend>
+
+      <form action="#" class="contact-data__inputs" method="post">
+        <input type="text" name="inputs-phone" id="inputs-phone" class="contact-data__name" placeholder="Введите e-mail">
+      </form>
+
+    </div>
+  </section>
+
+  <section class="rating">
+    <div class="rating__wrapper">
+      <h2 class="rating__title">
+        ВАше Общее впечатление:
+      </h2>
+      <label class="rating__control">
+        <input type="radio" class="rating-checkbox">
+
+        <span class="rating-legend">Скорее положительное</span>
+      </label>
+      <label class="rating__control">
+        <input type="radio" class="rating__checkbox">
+
+        <span class="rating__legend">Скорее отрицательное</span>
+      </label>
+      <label class="rating__control">
+        <input type="radio" class="rating__checkbox">
+
+        <span class="rating__legend">Затрудняюсь ответить</span>
+      </label>
+    </div>
+  </section>
+
+  <section class="places">
+    <div class="places__wrapper">
+      <h2 class="places__title">
+        посещенные <br>достопримечательности:
+      </h2>
+
+      <label class="places__control">
+        <input type="checkbox" class="places__checkbox" checked>
+
+        <span class="places__legend">Мост Дьявола</span>
+      </label>
+      <label class="places__control">
+        <input type="checkbox" class="places__checkbox" checked>
+
+        <span class="places__legend">Гора-Колокол</span>
+      </label>
+      <label class="places__control">
+        <input type="checkbox" class="places__checkbox" checked>
+
+        <span class="places__legend">Слайд-парк</span>
+      </label>
+      <label class="places__control">
+        <input type="checkbox" class="places__checkbox" >
+
+        <span class="places__legend">Красные скалы</span>
+      </label>
+
+    </div>
+
+  </section>
+
+  <section class="emotions">
+    <div class="emotions__wrapper">
+      <h2 class="emotions__title">
+        Опишите свои эмоции:
+      </h2>
+
+      <form class="emotions__inputs" method="post">
+        <input type="text" name="input-emotions" id="input-emotions" class="emotions__text" placeholder="Опишите подробно все свои восторги ">
+      </form>
+
+      <button class="emotions__button" type="button">
+        ОТПРАВИТЬ ОТЗЫВ
+      </button>
+      <legend class="emotions__obligatory">
+        * — обязательные поля
+      </legend>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__wrapper">
+        <p class="footer__hashtag">
+          #visitsedona
+        </p>
+        <ul class="footer__list">
+          <li class="footer__item footer__vk">
+            <a href="#" class="footer__social">
+              <img src="img/icons/icon-vk.svg" alt="icon of vkontakte">
+            </a>
+          </li>
+          <li class="footer__item footer__tg">
+            <a href="#" class="footer__social">
+              <img src="img/icons/icon-tg.svg" alt="icon of telegram">
+            </a>
+          </li>
+          <li class="footer__item footer__yt">
+            <a href="#" class="footer__social">
+              <img src="img/icons/icon-youtube.svg" alt="icon of youtube">
+            </a>
+          </li>
+        </ul>
+        <p class="footer__text">
+          разработано
+        </p>
+        <a href="#" class="footer__link">
+          <img src="img/icons/htmlacademy.svg" alt="icon of htmlacademy">
+        </a>
+    </div>
+  </footer>
+</body>
+</html>
