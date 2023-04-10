@@ -1,0 +1,27 @@
+.main-container {
+  margin: 0 auto;
+  margin-top: 56px;
+}
+
+.main-container__img {
+  width: 320px;
+  height: 389px;
+  background-image: url(../img/back-mobile.jpg.jpg);
+  background-color: #000000;
+  position: relative;
+  z-index: 1;
+
+  &::after {
+    position: absolute;
+    content: "";
+    background-image: url(../img/intro-triangle.svg);
+    height: 57px;
+    width: 320px;
+    bottom: 0;
+  }
+}
+
+.main-container__welcome{
+  display: block;
+  transform: translate(7%, 30%);
+}

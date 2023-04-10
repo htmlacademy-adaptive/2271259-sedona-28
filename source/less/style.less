@@ -1,1 +1,69 @@
 // Начните писать стили здесь
+
+@import "main-container.less";
+@import "header.less";
+@import "catalog-desc.less";
+@import "catalog.less";
+@import "contact-data.less";
+@import "cta.less";
+@import "desc.less";
+@import "emotions.less";
+@import "features.less";
+@import "footer.less";
+@import "map.less";
+@import "name-data.less";
+@import "opinion.less";
+@import "photo-card.less";
+@import "photos.less";
+@import "places.less";
+@import "rating.less";
+@import "video.less";
+
+@pw: 320px;
+@blue: #81B3D2;
+@black: #000000;
+@white: #ffffff;
+@grey: #eeeeee;
+@dark-grey: #333333;
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  width: @pw;
+  font-family: "PT Sans", sans-serif;
+}
+
+
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+
+

@@ -5,61 +5,64 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sedona</title>
-  <link rel="stylesheet" href="./less/style.less">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" >
 </head>
 <body class="page__body">
   <header class="main-header">
     <div class="main-nav">
-      <div class="main-nav__wrapper">
+        <div class="main-nav__wrapper">
 
-        <!-- <ul class="main-header-nav__list">
-          <li class="main-header-nav__item current">
-            <a href="index.html">
-              главная
-            </a>
-          </li>
-          <li class="main-header-nav__item">
-            <a href="#">
-              фото и видео
-            </a>
-          </li>
-        </ul> -->
+          <!-- <ul class="main-header-nav__list">
+            <li class="main-header-nav__item current">
+              <a href="index.html">
+                главная
+              </a>
+            </li>
+            <li class="main-header-nav__item">
+              <a href="#">
+                фото и видео
+              </a>
+            </li>
+          </ul> -->
 
-        <div class="main-header-nav__logo">
-          <a href="#" class="main-header-nav__logo-link">
-            <img src="img/logo.jpg" height="96" width="185" alt="logo Sedona" class="main-header-nav__logo-image">
-          </a>
+          <div class="main-header-nav__logo">
+            <a href="#" class="main-header-nav__logo-link">
+              <img src="img/logo.jpg" height="96" width="185" alt="logo Sedona" class="main-header-nav__logo-image">
+            </a>
+          </div>
+
+          <!-- <ul class="main-header-nav__list">
+            <li class="main-header-nav__item">
+              <a href="#">
+                форма отзыва
+              </a>
+            </li>
+            <li class="main-header-nav__item">
+              <a href="#">
+                html academy
+              </a>
+            </li>
+          </ul> -->
+
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">
+            Open Menu
+          </span>
+        </button>
         </div>
-
-        <!-- <ul class="main-header-nav__list">
-          <li class="main-header-nav__item">
-            <a href="#">
-              форма отзыва
-            </a>
-          </li>
-          <li class="main-header-nav__item">
-            <a href="#">
-              html academy
-            </a>
-          </li>
-        </ul> -->
-
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">
-          Open Menu
-        </span>
-      </button>
-      </div>
-  </div>
-  </header>
+    </div>
+    </header>
 
   <section class="opinion">
     <div class="opinion__wrapper">
       <h2 class="opinion__title">
-        Оставьте свой отзыв
+        оставьте свой отзыв
       </h2>
       <p class="opinion__text">
-        Помогите нашим отелям стать лучше! <br>оставьте отзыв о них, а также о<br> посещенных<br> вами достопримечательностях
+        помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
       </p>
     </div>
 
@@ -68,11 +71,11 @@
   <section class="name-data">
     <div class="name-data__wrapper">
       <h2 class="name-data__title">
-        Представьтесь:
+        представьтесь:
       </h2>
 
       <legend class="name-data__description">
-        ИМЯ*:
+        имя*:
       </legend>
 
     <form action="#" class="name-data__inputs" method="post">
@@ -81,7 +84,7 @@
 
 
       <legend class="name-data__description">
-        ФАМИЛИЯ*:
+        фамилия*:
       </legend>
 
 
@@ -89,7 +92,7 @@
 
 
       <legend class="name-data__description">
-        Отчество:
+        отчество:
       </legend>
 
 
@@ -102,10 +105,10 @@
   <section class="contact-data">
     <div class="contact-data__wrapper">
       <h2 class="contact-data__title">
-        Контактная информация:
+        контактная информация:
       </h2>
       <legend class="contact-data__description">
-        Контактный телефон*:
+        контактный телефон*:
       </legend>
 
       <form action="#" class="contact-data__inputs" method="post">
@@ -113,7 +116,7 @@
       </form>
 
       <legend class="contact-data__description">
-        Электронная почта*:
+        электронная почта*:
       </legend>
 
       <form action="#" class="contact-data__inputs" method="post">
@@ -126,22 +129,22 @@
   <section class="rating">
     <div class="rating__wrapper">
       <h2 class="rating__title">
-        ВАше Общее впечатление:
+        ваше общее впечатление:
       </h2>
       <label class="rating__control">
         <input type="radio" name="radio-input" class="rating-checkbox">
 
-        <span class="rating__legend">Скорее положительное</span>
+        <span class="rating__legend">скорее положительное</span>
       </label>
       <label class="rating__control">
         <input type="radio" name="radio-input"  class="rating__checkbox">
 
-        <span class="rating__legend">Скорее отрицательное</span>
+        <span class="rating__legend">скорее отрицательное</span>
       </label>
       <label class="rating__control">
         <input type="radio" name="radio-input"  class="rating__checkbox">
 
-        <span class="rating__legend">Затрудняюсь ответить</span>
+        <span class="rating__legend">затрудняюсь ответить</span>
       </label>
     </div>
   </section>
@@ -180,15 +183,15 @@
   <section class="emotions">
     <div class="emotions__wrapper">
       <h2 class="emotions__title">
-        Опишите свои эмоции:
+        опишите свои эмоции:
       </h2>
 
       <form class="emotions__inputs" method="post">
-        <input type="text" name="input-emotions" id="input-emotions" class="emotions__text" placeholder="Опишите подробно все свои восторги ">
+        <input type="text" name="input-emotions" id="input-emotions" class="emotions__text" placeholder="опишите подробно все свои восторги ">
       </form>
 
       <button class="emotions__button" type="button">
-        ОТПРАВИТЬ ОТЗЫВ
+        отправить отзыв
       </button>
       <legend class="emotions__obligatory">
         * — обязательные поля
