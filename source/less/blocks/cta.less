@@ -1,4 +1,16 @@
 
+.cta {
+
+  @media (min-width: @tablet-width) {
+    width: @tablet-width;
+
+  }
+  @media (min-width: @desktop-width) {
+    width: @desktop-width;
+
+  }
+}
+
 .cta__title{
 
   .bigText();
@@ -36,7 +48,17 @@
   padding: 16px 49px;
   margin-top: 32px;
   margin-bottom: 49px;
+  margin-left: 18px;
 
+  @media (min-width: @tablet-width) {
+    width: 458px;
+    transform: translate(35%);
+  }
+  @media (min-width: @tablet-width) {
 
+    margin-left: 0;
+    transform: translate(85%);
+
+  }
 }
 

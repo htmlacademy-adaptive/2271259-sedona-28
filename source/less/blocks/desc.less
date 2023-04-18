@@ -1,6 +1,30 @@
 
 .desc {
   margin-top: 32px;
+  position: relative;
+
+  // &::after {
+  //   z-index: 1;
+  //   position: absolute;
+  //   content: "";
+  //   background-image: url(../img/intro-triangle.svg);
+  //   height: 70px;
+  //   width: 368px;
+  //   bottom:-20px;
+
+  // }
+
+  @media(min-width: @tablet-width) {
+    min-width: @tablet-width;
+   margin-left: auto;
+
+  }
+
+  @media(min-width: @desktop-width) {
+    min-width: @desktop-width;
+   margin-left: auto;
+
+  }
 }
 
 .desc__title {

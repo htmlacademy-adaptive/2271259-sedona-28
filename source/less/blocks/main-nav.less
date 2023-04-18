@@ -1,7 +1,26 @@
+.main-nav{
+  width: @mobile-width;
+  position: relative;
+
+  @media(min-width: @tablet-width) {
+    width: 768px;
+  }
+}
+
+
 .main-nav__toggle {
   width: 23px;
   height: 22px;
 
   background-image: url(../img/icons/icon-menu.svg);
   border: none;
+
+  position: absolute;
+  top: 17px;
+  right: 20px;
+
+  @media(min-width: @tablet-width){
+    visibility: hidden;
+  }
+
 }

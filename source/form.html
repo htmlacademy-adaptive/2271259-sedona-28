@@ -13,51 +13,60 @@
 <body class="page__body">
   <header class="main-header">
     <div class="main-nav">
-        <div class="main-nav__wrapper">
+      <div class="main-nav__wrapper">
 
-          <!-- <ul class="main-header-nav__list">
-            <li class="main-header-nav__item current">
-              <a href="index.html">
-                главная
-              </a>
-            </li>
-            <li class="main-header-nav__item">
-              <a href="#">
-                фото и видео
-              </a>
-            </li>
-          </ul> -->
-
-          <div class="main-header-nav__logo">
-            <a href="#" class="main-header-nav__logo-link">
-              <img src="img/logo.jpg" height="96" width="185" alt="logo Sedona" class="main-header-nav__logo-image">
+        <ul class="main-header-nav__list">
+          <li class="main-header-nav__item ">
+            <a href="index.html" class="main-header-nav__link ">
+              главная
             </a>
-          </div>
+          </li>
+          <li class="main-header-nav__item">
+            <a href="catalog.html" class="main-header-nav__link">
+              фото и видео
+            </a>
+          </li>
 
-          <!-- <ul class="main-header-nav__list">
-            <li class="main-header-nav__item">
-              <a href="#">
-                форма отзыва
-              </a>
-            </li>
-            <li class="main-header-nav__item">
-              <a href="#">
-                html academy
-              </a>
-            </li>
-          </ul> -->
+          <li class="main-header-nav__item">
+            <a href="#" class="main-header-nav__link current">
+              форма отзыва
+            </a>
+          </li>
+          <li class="main-header-nav__item">
+            <a href="#" class="main-header-nav__link">
+              html academy
+            </a>
+          </li>
 
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">
-            Open Menu
-          </span>
-        </button>
+        </ul>
+
+        <div class="main-header-nav__logo">
+          <a href="#" class="main-header-nav__logo-link">
+            <img src="img/logo.jpg" height="96" width="185" alt="logo Sedona" class="main-header-nav__logo-image">
+          </a>
         </div>
-    </div>
-    </header>
+
+
+
+
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">
+          Open Menu
+        </span>
+      </button>
+      </div>
+  </div>
+  </header>
+
+  <div class="form-back">
+    <img src="img/sedona-form-mobile.svg" alt="welcome-text" class="form__welcome">
+    <img src="img/sedona-form-tablet.svg" alt="welcome-text" class="form__welcome-tablet">
+    <img src="img/sedona-welcome-desktop.svg" alt="welcome-text" class="form__welcome-desktop">
+  </div>
 
   <section class="opinion">
     <div class="opinion__wrapper">
+
       <h2 class="opinion__title">
         оставьте свой отзыв
       </h2>
@@ -68,7 +77,8 @@
 
   </section>
 
-  <section class="name-data">
+  <div class="grid-template-2">
+   <section class="name-data">
     <div class="name-data__wrapper">
       <h2 class="name-data__title">
         представьтесь:
@@ -100,9 +110,9 @@
     </form>
 
     </div>
-  </section>
+   </section>
 
-  <section class="contact-data">
+   <section class="contact-data">
     <div class="contact-data__wrapper">
       <h2 class="contact-data__title">
         контактная информация:
@@ -124,8 +134,8 @@
       </form>
 
     </div>
-  </section>
-
+   </section>
+  </div>
   <section class="rating">
     <div class="rating__wrapper">
       <h2 class="rating__title">
@@ -155,6 +165,9 @@
         посещенные <br>достопримечательности:
       </h2>
 
+      <div class="grid-template-places">
+
+
       <label class="places__control">
         <input type="checkbox" class="places__checkbox" checked>
 
@@ -175,7 +188,7 @@
 
         <span class="places__legend">Красные скалы</span>
       </label>
-
+    </div>
     </div>
 
   </section>

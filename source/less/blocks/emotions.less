@@ -1,6 +1,17 @@
 .emotions{
   margin-top: 24px;
+  @media (min-width: @tablet-width) {
+    width: @tablet-width;
+    display: flex;
+    justify-content: center;
 
+  }
+  @media (min-width: @desktop-width) {
+    width: @desktop-width;
+    display: flex;
+    justify-content: center;
+
+  }
 }
 
 .emotions__title{
@@ -16,9 +27,14 @@
 .emotions__text{
   border: none;
   background-color: #f2f2f2;
-
+  width: 279px;
+  height: 150px;
   margin-bottom: 56px;
+  @media (min-width: @tablet-width) {
+    width:  648px;
+    height: 160px;
 
+  }
 }
 
 .emotions__button{
@@ -32,6 +48,10 @@
 
   padding: 16px 49px;
   border: none;
+
+  @media (min-width: @tablet-width) {
+
+  }
 }
 
 .emotions__obligatory{

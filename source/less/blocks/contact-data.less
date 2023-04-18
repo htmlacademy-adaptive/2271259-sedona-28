@@ -1,5 +1,16 @@
 .contact-data {
   margin-top: 24px;
+
+  @media (min-width: @tablet-width) {
+    width: 360px;
+  
+  }
+  @media (min-width: @desktop-width) {
+    width: 480px;
+    display: flex;
+    justify-content: center;
+  }
+
 }
 
 .contact-data__title {

@@ -1,5 +1,14 @@
 .rating{
   margin-top: 24px;
+
+  @media (min-width: @tablet-width) {
+    width: @tablet-width;
+  }
+  @media (min-width: @desktop-width) {
+    width: @desktop-width;
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .rating__title{
@@ -15,4 +24,13 @@
   .bigText();
 
   text-transform: capitalize;
+}
+
+.rating__control:nth-child(4){
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+  @media (min-width: @desktop-width) {
+    display: inline-block;
+  }
 }
