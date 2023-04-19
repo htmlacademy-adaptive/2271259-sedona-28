@@ -2,6 +2,7 @@
 .desc {
   margin-top: 32px;
   position: relative;
+  width: @mobile-width;
 
   // &::after {
   //   z-index: 1;
@@ -15,14 +16,15 @@
   // }
 
   @media(min-width: @tablet-width) {
-    min-width: @tablet-width;
-   margin-left: auto;
+    
+   width: @tablet-width;
 
   }
 
   @media(min-width: @desktop-width) {
-    min-width: @desktop-width;
-   margin-left: auto;
+
+    width: @desktop-width;
+
 
   }
 }

@@ -1,11 +1,35 @@
-.photos__list{
+.photos {
+  width: @mobile-width;
   @media (min-width: @tablet-width) {
     width: @tablet-width;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
+
   @media (min-width: @desktop-width) {
     width: @desktop-width;
   }
+
 }
+
+
+.photos__list{
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    // width: @tablet-width;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+  }
+  @media (min-width: @desktop-width) {
+
+  }
+}
+
+
 
 .photo-card__img{
   display: block;

@@ -1,8 +1,12 @@
 
 .cta {
+  width: @mobile-width;
 
   @media (min-width: @tablet-width) {
     width: @tablet-width;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
   }
   @media (min-width: @desktop-width) {
@@ -52,12 +56,9 @@
 
   @media (min-width: @tablet-width) {
     width: 458px;
-    transform: translate(35%);
-  }
-  @media (min-width: @tablet-width) {
 
-    margin-left: 0;
-    transform: translate(85%);
+  }
+  @media (min-width: @desktop-width) {
 
   }
 }

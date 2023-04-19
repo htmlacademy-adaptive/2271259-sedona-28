@@ -1,16 +1,21 @@
 .footer {
   position: relative;
+  width: @mobile-width;
+
   @media (min-width: @tablet-width) {
 
     width: @tablet-width;
+    min-height: 120px;
+
     margin: auto;
-    margin-top: 36px;
+    padding-top: 36px;
+
 
   }
   @media (min-width: @desktop-width) {
-    min-height: 120px;
     width: @desktop-width;
-    margin: auto;
+
+
 
 
   }
@@ -38,7 +43,10 @@
 }
 
 .footer__list {
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
 
   @media (min-width: @tablet-width) {
     width: 156px;
@@ -85,7 +93,7 @@
   @media (min-width: @tablet-width) {
     position: absolute;
     right: 118px;
-    top: 4px;
+    top: 39px;
   }
   @media (min-width: @desktop-width) {
     position: absolute;

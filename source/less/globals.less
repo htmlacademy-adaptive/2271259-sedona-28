@@ -12,6 +12,7 @@ body {
   padding: 0;
   width: @pw;
   font-family: "PT Sans", sans-serif;
+
 }
 
 
@@ -37,4 +38,41 @@ li {
   list-style: none;
 }
 
+.container {
+  width: 320px;
+  margin: 0 auto;
+  margin-left: 20px;
 
+  @media (min-width: @tablet-width) {
+
+
+  }
+}
+
+.page__wrapper{
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+    margin: 0 auto;
+    margin-left: 20px;
+  }
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+// .container-tablet {
+//   width: 320px;
+//   margin: 0 auto;
+//   // margin-left: 20px;
+
+//   @media (min-width: @tablet-width) {
+
+
+//   }
+// }

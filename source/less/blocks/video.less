@@ -1,4 +1,8 @@
 .video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   @media (min-width: @tablet-width) {
     width: @tablet-width;
   }
@@ -8,6 +12,8 @@
 }
 
 .video__img{
+  display: flex;
+
   @media (min-width: @tablet-width) {
     display: none;
   }
@@ -35,12 +41,13 @@
   }
   @media (min-width: @desktop-width) {
     display: block;
-    
+
   }
 }
 
 .video__title{
   color: @black;
+
 
  .bigText();
 
@@ -55,3 +62,4 @@
   text-transform: uppercase;
   text-align: center;
 }
+
