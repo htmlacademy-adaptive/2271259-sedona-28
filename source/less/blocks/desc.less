@@ -1,6 +1,32 @@
 
 .desc {
   margin-top: 32px;
+  position: relative;
+  width: @mobile-width;
+
+  // &::after {
+  //   z-index: 1;
+  //   position: absolute;
+  //   content: "";
+  //   background-image: url(../img/intro-triangle.svg);
+  //   height: 70px;
+  //   width: 368px;
+  //   bottom:-20px;
+
+  // }
+
+  @media(min-width: @tablet-width) {
+    
+   width: @tablet-width;
+
+  }
+
+  @media(min-width: @desktop-width) {
+
+    width: @desktop-width;
+
+
+  }
 }
 
 .desc__title {

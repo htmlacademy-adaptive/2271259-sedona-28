@@ -1,41 +1,36 @@
-.main-container {
-  margin: 0 auto;
+.form-back {
+  width: @pw;
 
-  // @media(min-width: @desktop-width) {
-  //   width: @desktop-width;
-  // }
-}
-
-.main-container__img {
-  width: 320px;
-  height: 389px;
-  background-image: url(../img/back-mobile.jpg.jpg);
+  height: 158px;
+  background-image: url(../img/form-back-mobile.jpg);
   background-color: #000000;
   position: relative;
 
   @media(min-width: @tablet-width) {
     min-width: @tablet-width;
-    height: 518px;
-    background-image: url(../img/back-tablet.jpg);
+    height: 290px;
+    background-image: url(../img/form-back-tablet.jpg);
     background-color: #000000;
     position: relative;
   }
 
   @media(min-width: @desktop-width) {
     width: @desktop-width;
-    height: 518px;
+    height: 300px;
     background-image: url(../img/back-desktop.jpg);
     background-color: #000000;
     position: relative;
   }
 
+
   &::after {
     position: absolute;
     content: "";
-    background-image: url(../img/intro-triangle.svg);
-    height: 57px;
+    background-image: url(../img/intro-triangle-form-mobile);
     width: 320px;
-    bottom: 0;
+    height: 51px;
+    bottom: -10px;
+    z-index: 1;
 
     @media(min-width: @tablet-width) {
       position: absolute;
@@ -49,39 +44,37 @@
     @media(min-width: @desktop-width) {
       position: absolute;
       content: "";
-      background-image: url(../img/intro-triangle-desktop-1.svg);
+      background-image: url(../img/intro-triangle-form-desktop.svg);
       height: 57px;
       width: @desktop-width;
       bottom: 0;
     }
+
   }
 
 
 }
 
-
-
-.main-container__welcome{
+.form__welcome{
   display: block;
-  transform: translate(7%, 30%);
-
-  @media(min-width: @tablet-width) {
+  transform: translate(20%, 130%);
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+  @media (min-width: @desktop-width) {
     display: none;
   }
 }
 
-.main-container__welcome-tablet, .main-container__welcome-desktop {
+.form__welcome-tablet{
   display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block
+
+  }
 }
 
-.main-container__welcome-tablet{
-  @media (min-width: @tablet-width){
-    display: block;
-    transform: translate(33%, 20%);
-  }
-  @media (min-width: @desktop-width){
-    display: block;
-    transform: translate(78%, 20%);
-  }
-
+.form__welcome-desktop{
+  display: none;
 }

@@ -11,22 +11,36 @@
     content="width=device-width, initial=1">
   </head>
   <body class="page__body">
+    <div class="page__wrapper">
+
     <header class="main-header">
       <div class="main-nav">
         <div class="main-nav__wrapper">
 
-          <!-- <ul class="main-header-nav__list">
-            <li class="main-header-nav__item current">
-              <a href="index.html">
+          <ul class="main-header-nav__list">
+            <li class="main-header-nav__item ">
+              <a href="index.html" class="main-header-nav__link current">
                 главная
               </a>
             </li>
             <li class="main-header-nav__item">
-              <a href="#">
+              <a href="catalog.html" class="main-header-nav__link">
                 фото и видео
               </a>
             </li>
-          </ul> -->
+
+            <li class="main-header-nav__item">
+              <a href="form.html" class="main-header-nav__link">
+                форма отзыва
+              </a>
+            </li>
+            <li class="main-header-nav__item">
+              <a href="#" class="main-header-nav__link">
+                html academy
+              </a>
+            </li>
+
+          </ul>
 
           <div class="main-header-nav__logo">
             <a href="#" class="main-header-nav__logo-link">
@@ -34,18 +48,8 @@
             </a>
           </div>
 
-          <!-- <ul class="main-header-nav__list">
-            <li class="main-header-nav__item">
-              <a href="#">
-                форма отзыва
-              </a>
-            </li>
-            <li class="main-header-nav__item">
-              <a href="#">
-                html academy
-              </a>
-            </li>
-          </ul> -->
+
+
 
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">
@@ -58,18 +62,21 @@
 
     <main class="main-container">
 
-        <h1 class="visually-hidden">
-          photo
-        </h1>
 
-        <div class="main-container__img">
+      <h1 class="visually-hidden">
+          photo
+      </h1>
+
+      <div class="main-container__img">
 
           <img src="img/sedona-welcome-mobile.svg" alt="welcome-text" class="main-container__welcome">
-        </div>
-
+          <img src="img/sedona-welcome-tablet.svg" alt="welcome-text" class="main-container__welcome-tablet">
+          <img src="img/sedona-welcome-desktop.svg" alt="welcome-text" class="main-container__welcome-desktop">
+      </div>
 
 
       <section class="desc">
+
         <h2 class="visually-hidden">
           description
         </h2>
@@ -81,15 +88,19 @@
             рассмотрим 5 причин, по которым седона круче, чем гранд каньон!
           </p>
         </div>
+
       </section>
 
       <section class="features">
         <h2 class="visually-hidden">
           features
         </h2>
+
         <div class="features__wrapper">
 
           <div class="features-highlighted">
+
+            <div class="block">
               <h3 class="features-highlighted__title ">
                 настоящий городок
               </h3>
@@ -99,7 +110,10 @@
               <p class="features-highlighted__text">
                 седона не аттракцион для туристов,<br> там течет своя жизнь
               </p>
-              <img src="img/photo-city-mobile.jpg" height="256" width="800" alt="photo of bar" class="features-highlighted__img">
+            </div>
+            <img src="img/photo-city-mobile.jpg" height="256" width="800" alt="photo of bar" class="features-highlighted__img">
+            <img src="img/photo-city-tablet.jpg" height="256" width="800" alt="photo of bar" class="features-highlighted__img-tablet">
+            <img src="img/photo-city-desktop.jpg" height="256" width="800" alt="photo of bar" class="features-highlighted__img-desktop">
             </div>
 
           <div class="complementaries">
@@ -134,51 +148,58 @@
             </ul>
           </div>
 
-          <div class="features-highlighted-second ">
-              <h3 class="features-highlighted-second__title ">
+          <div class="features-highlighted-bridge ">
+            <img src="img/photo-bridge-mobile.jpg" height="256" width="800" alt="photo of rock bridge" class="features-highlighted-bridge__img">
+            <img src="img/photo-bridge-tablet.jpg" height="256" width="800" alt="photo of rock bridge" class="features-highlighted-bridge__img-tablet">
+            <img src="img/photo-bridge-desktop.jpg" height="256" width="800" alt="photo of rock bridge" class="features-highlighted-bridge__img-desktop">
+
+            <div class="block">
+
+              <h3 class="features-highlighted-bridge__title ">
                 там есть мост дьявола
               </h3>
-              <p class="features-highlighted-second__num">
+              <p class="features-highlighted-bridge__num">
                 — №2 —
               </p>
-              <p class="features-highlighted-second__text">
+              <p class="features-highlighted-bridge__text">
                 да, по нему можно пройти! если вы осмелитесь, конечно
               </p>
-              <img src="img/photo-bridge-mobile.jpg" height="256" width="800" alt="photo of rock bridge" class="features-highlighted-second__img">
+            </div>
           </div>
 
-          <div class="features-feature">
-            <ul class="features-feature__list">
-              <li class="features-feature__item">
-                <h3 class="features-feature__title ">
+
+          <div class="advantages">
+            <ul class="advantages__list">
+              <li class="advantages__item">
+                <h3 class="advantages__title ">
                   небольшая площадь
                 </h3>
-                <p class="features-feature__num">
+                <p class="advantages__num">
                   — №3 —
                 </p>
-                <p class="features-feature__text ">
+                <p class="advantages__text ">
                   все интересные места находятся очень близко
                 </p>
               </li>
-              <li class="features-feature__item">
-                <h3 class="features-feature__title ">
+              <li class="advantages__item">
+                <h3 class="advantages__title ">
                   красивая дорога
                 </h3>
-                <p class="features-feature__num">
+                <p class="advantages__num">
                   — №4 —
                 </p>
-                <p class="features-feature__text ">
+                <p class="advantages__text ">
                   ехать в седону из лас вегаса совсем не скучно!
                 </p>
               </li>
-              <li class="features-feature__item">
-                <h3 class="features-feature__title ">
+              <li class="advantages__item">
+                <h3 class="advantages__title ">
                   мало туристов
                 </h3>
-                <p class="features-feature__num">
+                <p class="advantages__num">
                   — №5 —
                 </p>
-                <p class="features-feature__text ">
+                <p class="advantages__text ">
                   большинство едет в гранд каньон и толпится там
                 </p>
               </li>
@@ -213,6 +234,8 @@
         </h2>
         <div class="map__wrapper">
           <img src="img/map-mobile.jpg" alt="map from google" class="map__img">
+          <img src="img/map-tablet.jpg" alt="map from google" class="map__img-tablet">
+          <img src="img/map-desktop.jpg" alt="map from google" class="map__img-desktop">
         </div>
       </section>
 
@@ -246,6 +269,8 @@
             </a>
         </div>
       </footer>
+
     </main>
+   </div>
   </body>
 </html>

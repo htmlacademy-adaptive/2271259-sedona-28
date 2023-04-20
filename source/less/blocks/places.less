@@ -1,5 +1,17 @@
 .places{
   margin-top: 24px;
+
+  @media (min-width: @tablet-width) {
+    width: @tablet-width;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (min-width: @desktop-width) {
+      width: @desktop-width;
+
+  }
 }
 
 .places__title{
@@ -15,4 +27,17 @@
   .bigText();
 
   text-transform: capitalize;
+}
+
+.grid-template-places{
+  @media (min-width: @tablet-width) {
+    width: @tablet-width;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  @media (min-width: @desktop-width) {
+    width: @desktop-width;
+    display: flex;
+    justify-content: center;
+  }
 }

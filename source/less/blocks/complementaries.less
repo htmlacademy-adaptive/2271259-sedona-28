@@ -1,7 +1,35 @@
+.complementaries {
+  width: 320px;
+
+
+  @media(min-width: @tablet-width) {
+    width: @tablet-width;
+
+
+  }
+  @media(min-width: @desktop-width) {
+    width: @desktop-width;
+
+
+  }
+}
+
 
 .complementaries__list{
   position: relative;
   margin-top: 25px;
+
+  @media(min-width: @tablet-width) {
+    width: @tablet-width;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  @media(min-width: @desktop-width) {
+    width: @desktop-width;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 44px;
+  }
 }
 
 .complementaries__title {
@@ -36,5 +64,10 @@
 
   position: absolute;
   left: 19px;
+
+  @media(min-width: @tablet-width) {
+   position: static;
+  }
+
 }
 

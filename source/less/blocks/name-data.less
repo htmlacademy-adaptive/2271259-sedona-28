@@ -1,3 +1,21 @@
+.name-data{
+
+
+ @media(min-width: @tablet-width) {
+  width: 360px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+ }
+ @media(min-width: @desktop-width) {
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+}
+
 .name-data__title{
 
   .bigText();
@@ -31,4 +49,17 @@
   border: none;
   background-color: #f2f2f2;
   padding: 16px;
+}
+
+.grid-template-2{
+  @media (min-width: @tablet-width) {
+    width: @tablet-width;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  @media (min-width: @desktop-width) {
+    width: @desktop-width;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
