@@ -1,26 +1,165 @@
 .main-nav{
   width: @mobile-width;
-  position: relative;
+
+
 
   @media(min-width: @tablet-width) {
-    width: 768px;
+    width: @tablet-width;
+  }
+  @media(min-width: @desktop-width) {
+    width: @desktop-width;
   }
 }
 
+.main-nav__menu{
 
-.main-nav__toggle {
+  display: none;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  z-index: 1;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    z-index: 0;
+  }
+}
+
+.main-nav__open-menu {
   width: 23px;
   height: 22px;
 
   background-image: url(../img/icons/icon-menu.svg);
+  background-color: @white;
   border: none;
 
   position: absolute;
   top: 17px;
   right: 20px;
 
+  cursor: pointer;
+
+  // display: none;
+
   @media(min-width: @tablet-width){
     visibility: hidden;
   }
 
 }
+
+.main-nav__close-menu{
+  width: 22px;
+  height: 22px;
+
+  background-image: url(../img/icons/icon-cross.svg);
+  background-color: @blue;
+  border: none;
+
+  position: absolute;
+  top: 17px;
+  right: 16px;
+  z-index: 1;
+
+  cursor: pointer;
+
+
+
+  @media(min-width: @tablet-width){
+    visibility: hidden;
+  }
+}
+
+.menu--open{
+  display: block;
+}
+
+.main-nav--closed {
+  display: none;
+}
+
+.header--no-js{
+  .open-menu, .close-menu {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+    position: static;
+  }
+}
+
+// .main-nav--opened .main-nav__toggle {
+//   top: 0;
+//   right: auto;
+//   left: 0;
+
+//   &::before,
+//   &::after {
+//     content: "";
+//     position: absolute;
+//     top: 24px;
+//     left: 18px;
+//     width: 36px;
+//     height: 2px;
+//     background-color: #ffffff;
+//   }
+
+//   &::before {
+//     transform: rotate(45deg);
+//     box-shadow: none;
+//   }
+
+//   &::after {
+//     transform: rotate(-45deg);
+//   }
+
+//   &:active::before,
+//   &:active::after {
+//     background-color: fade(#ffffff, 30%);
+//   }
+// }
+
+// @media (max-width: @mobile-width-only) {
+//   .main-nav--closed .main-header-nav__item {
+//     display: none;
+//   }
+
+//   &--active {
+//     display: block;
+//   }
+
+//   .main-nav--opened .main-nav__wrapper {
+//     position: absolute;
+//     top: 0;
+//     right: 0;
+//     left: 70px;
+//     z-index: 10;
+//     min-height: 80vh;
+//     background-color: #6a4d38;
+//   }
+
+//   .main-nav--opened .main-nav__wrapper::before {
+//     content: "";
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     z-index: 2;
+//     width: 7px;
+//     height: 100%;
+//     box-shadow: inset 4px 0 7px -2px fade(#000000, 40%);
+//   }
+
+//   .main-nav--nojs .main-nav__toggle {
+//     display: none;
+//   }
+
+//   .main-nav--nojs .main-nav__wrapper {
+//     position: static;
+//     min-height: 0;
+//   }
+
+//   .main-nav--nojs .site-list__item {
+//     display: block;
+//   }
+
+// }

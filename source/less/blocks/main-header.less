@@ -1,6 +1,7 @@
 .main-header {
   // width: 320px;
-  height: 56px;
+  min-height: 56px;
+  position: relative;
 
 
  @media (min-width: @tablet-width) {
@@ -32,25 +33,19 @@
 
 }
 
-.main-header-nav__logo-image{
-  z-index: 1;
-}
-
 
 .main-header-nav__list{
-  @media(min-width: @mobile-width){
-    display: none;
-
-  }
+  padding: 0;
+  margin: 0;
 
   @media(min-width: @tablet-width){
-    min-width: @tablet-width;
+
     display: flex;
     padding: 0;
     margin: 0;
-    flex-wrap: wrap;
-    gap: 75px;
-    margin-left: 50px;
+
+    gap: 55px;
+
 
     padding-top: 18px;
 
@@ -60,39 +55,85 @@
     display: flex;
     padding: 0;
     margin: 0;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
     gap: 162px;
-    margin-left: 91px;
+
 
     padding-top: 18px;
+    padding-left: 91px;
 
   }
 }
 
 .main-header-nav__item{
 
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 21px;
+
+  width: @mobile-width;
+  min-height: 55px;
+  color: @white;
+
+  background-color: @blue;
 
   text-transform: uppercase;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  box-shadow: 0px 1px 0px rgba(1, 1, 1, 0.2), inset 0px 1px 0px rgba(255, 255, 255, 0.2);
+  @media (min-width: @tablet-width) {
+    display: inline-block;
+
+    background-color: @white;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+
+    box-shadow: none;
+
+  }
 }
 
+.main-header-nav__list:first-child {
+  @media (min-width: @tablet-width) {
+    margin-left: 50px;
+  }
+  @media (min-width: @desktop-width) {
+    margin-left: 0;
+  }
+}
+
+
 .main-header-nav__item:nth-child(3){
-  margin-left: 150px;
+
+  @media (min-width: @tablet-width) {
+
+    margin-left: 180px;
+  }
 
 }
 
 .main-header-nav__link{
-  color: @black;
+  color: @white;
+  font-size: 18px;
+  line-height: 26px;
 
   font-weight: 700;
-  font-size: 14px;
-  line-height: 21px;
 
-  text-transform: uppercase;
+  @media (min-width: @tablet-width) {
+    font-size: 14px;
+    line-height: 21px;
+
+    white-space: nowrap;
+    color: @black;
+
+  }
 }
 
 .current{
-  color: #766357;
+
+  @media (min-width: @tablet-width) {
+
+    color: #766357;
+  }
 }

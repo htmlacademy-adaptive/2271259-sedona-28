@@ -13,11 +13,23 @@
   <body class="page__body">
     <div class="page__wrapper">
 
-    <header class="main-header">
+    <header class="main-header header--no-js">
       <div class="main-nav">
         <div class="main-nav__wrapper">
 
-          <ul class="main-header-nav__list">
+          <div class="main-nav__top-bar">
+            <img src="img/logo.jpg" height="96" width="185" alt="logo Sedona" class="main-header-nav__logo">
+
+            <button class="main-nav__open-menu" type="button">
+              <span class="visually-hidden">
+                Open Menu
+              </span>
+            </button>
+          </div>
+
+
+          <nav class="main-nav__menu ">
+          <ul class="main-header-nav__list ">
             <li class="main-header-nav__item ">
               <a href="index.html" class="main-header-nav__link current">
                 главная
@@ -39,23 +51,14 @@
                 html academy
               </a>
             </li>
-
           </ul>
+          <button class="main-nav__close-menu" type="button">
+            <span class="visually-hidden">
+              Close Menu
+            </span>
+          </button>
+          </nav>
 
-          <div class="main-header-nav__logo">
-            <a href="#" class="main-header-nav__logo-link">
-              <img src="img/logo.jpg" height="96" width="185" alt="logo Sedona" class="main-header-nav__logo-image">
-            </a>
-          </div>
-
-
-
-
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">
-            Open Menu
-          </span>
-        </button>
         </div>
     </div>
     </header>
@@ -73,7 +76,6 @@
           <img src="img/sedona-welcome-tablet.svg" alt="welcome-text" class="main-container__welcome-tablet">
           <img src="img/sedona-welcome-desktop.svg" alt="welcome-text" class="main-container__welcome-desktop">
       </div>
-
 
       <section class="desc">
 
@@ -120,6 +122,7 @@
             <ul class="complementaries__list">
               <li class="complementaries__item">
                 <img src="img/icons/icon-house.svg" alt="icon of house" class="complementaries__icon">
+                
                 <h2 class="complementaries__title">
                   жилье
                 </h2>
@@ -272,5 +275,6 @@
 
     </main>
    </div>
+   <script src="js/script.js"></script>
   </body>
 </html>

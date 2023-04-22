@@ -43,8 +43,16 @@ li {
   margin: 0 auto;
   margin-left: 20px;
 
-  @media (min-width: @tablet-width) {
 
+  @media (min-width: @tablet-width) {
+    width: @tablet-width;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  @media (min-width: @desktop-width) {
+    width: @desktop-width;
 
   }
 }
@@ -52,9 +60,10 @@ li {
 .page__wrapper{
 
   @media (min-width: @desktop-width) {
-    width: 1200px;
+    width: @desktop-width;
     margin: 0 auto;
     margin-left: 20px;
+
   }
 }
 
