@@ -1,16 +1,54 @@
 .emotions{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   margin-top: 24px;
+  margin-bottom: 55px;
+
+  position: relative;
   @media (min-width: @tablet-width) {
     width: @tablet-width;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
   }
   @media (min-width: @desktop-width) {
     width: @desktop-width;
     display: flex;
     justify-content: center;
 
+  }
+
+  &::before {
+    @media (min-width: @tablet-width) {
+      position: absolute;
+      content: "";
+      background-image: url(../img/small-divider.svg);
+      height: 1px;
+      width: 123px;
+      top: 35px;
+      right: 60px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 280px;
+    }
+  }
+
+  &::after {
+
+    @media (min-width: @tablet-width) {
+      position: absolute;
+      content: "";
+      background-image: url(../img/small-divider.svg);
+      height: 1px;
+      width: 123px;
+      top: 35px;
+      left: 60px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 280px;
+    }
   }
 }
 
@@ -21,6 +59,7 @@
   text-align: center;
   text-transform: uppercase;
 
+  margin-top: 24px;
   margin-bottom: 20px;
 }
 
@@ -30,9 +69,14 @@
   width: 279px;
   height: 150px;
   margin-bottom: 56px;
+
   @media (min-width: @tablet-width) {
     width:  648px;
     height: 160px;
+
+  }
+  @media (min-width: @desktop-width) {
+    width:  768px;
 
   }
 }
@@ -52,6 +96,25 @@
   @media (min-width: @tablet-width) {
 
   }
+
+  &:link, &:visited {
+    color: @white;
+    background-color: @blue;
+  }
+
+  &:hover, &:focus {
+    color: @white;
+    background-color: #669EC0;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #5496BD;;
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+  }
 }
 
 .emotions__obligatory{
@@ -63,11 +126,33 @@
   text-transform: uppercase;
 
 
+  @media (min-width: @tablet-width) {
+    margin-left: auto;
+    margin-top: 20px;
+  }
+
 }
 
 .emotions__send{
   @media (min-width: @tablet-width) {
     display: flex;
     gap: 132px;
+  }
+}
+
+.emotions__text::placeholder {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  color: rgba(0, 0, 0, 0.3);
+
+  @media (min-width: @tablet-width) {
+    padding-left: 16px;
   }
 }

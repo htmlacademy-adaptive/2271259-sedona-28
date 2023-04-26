@@ -17,7 +17,7 @@
 
 .cta__title{
 
-  .bigText();
+
 
   display: flex;
   align-items: center;
@@ -36,6 +36,8 @@
 
   text-align: center;
   text-transform: uppercase;
+
+  margin-bottom: 0;
 }
 
 .cta__button{
@@ -56,10 +58,31 @@
 
   @media (min-width: @tablet-width) {
     width: 458px;
+    margin-top: 44px;
+    margin-bottom: 55px;
 
   }
   @media (min-width: @desktop-width) {
 
+  }
+
+  &:link, &:visited {
+    color: @white;
+    background-color: @blue;
+  }
+
+  &:hover, &:focus {
+    color: @white;
+    background-color: #669EC0;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #5496BD;;
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
   }
 }
 

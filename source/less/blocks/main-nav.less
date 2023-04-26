@@ -39,10 +39,15 @@
 
   cursor: pointer;
 
-  // display: none;
+  &:hover, &:focus {
+    opacity: 0.6;
+  }
+  &:active {
+    opacity: 0.3;
+  }
 
   @media(min-width: @tablet-width){
-    visibility: hidden;
+    display: none;
   }
 
 }
@@ -62,7 +67,12 @@
 
   cursor: pointer;
 
-
+  &:hover, &:focus {
+    opacity: 0.6;
+  }
+  &:active {
+    opacity: 0.3;
+  }
 
   @media(min-width: @tablet-width){
     visibility: hidden;

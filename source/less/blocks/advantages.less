@@ -36,6 +36,10 @@
   padding-top: 0;
 }
 
+.advantages__item:nth-child(2) .advantages__title {
+  padding-top: 49px;
+}
+
 .advantages__item:last-child {
   padding-top: 24px;
   padding-bottom: 28px;
@@ -122,3 +126,22 @@
 
 }
 
+.advantages__br-tablet{
+  display: none;
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.advantages__br-desktop{
+  display: none;
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+}

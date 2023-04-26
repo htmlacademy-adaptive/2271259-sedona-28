@@ -8,20 +8,11 @@
     width: @tablet-width;
     min-height: 120px;
 
-    margin: auto;
     padding-top: 36px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
 
   }
   @media (min-width: @desktop-width) {
     width: @desktop-width;
-
-
-
 
   }
 }
@@ -31,19 +22,23 @@
 
   .bigText();
 
-  text-transform: uppercase;
   text-align: center;
+  text-transform: uppercase;
+
 
   margin: 0;
   @media(min-width: @tablet-width){
+
     position: absolute;
     left: 60px;
 
+    margin-top: 13px;
+
   }
   @media(min-width: @desktop-width){
-    position: absolute;
+
     left: 120px;
-    top: 47px
+
   }
 }
 
@@ -55,15 +50,15 @@
   padding: 0;
 
   @media (min-width: @tablet-width) {
-    width: 156px;
-    gap: 6px;
+    // width: 156px;
+    margin: 0;
+    // display: flex;
+    // justify-content: center;
+    // align-self: center;
+
 
   }
   @media (min-width: @desktop-width) {
-
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 6px;
 
 
   }
@@ -73,8 +68,16 @@
   background-color: @blue;
   width: 48px;
   height: 48px;
-  display: inline-block;
-
+  // display: inline-block;
+ &:link, &:visited {
+  background-color: @blue;
+ }
+ &:hover, &:focus {
+  background-color: #669EC0;
+ }
+ &:active {
+  background-color: #5496BD;
+ }
 }
 
 
@@ -89,15 +92,26 @@
 
   margin: 0;
 
+  &:link, &:visited {
+    color: @black;
+   }
+   &:hover, &:focus {
+    color: #81B3D2;
+   }
+   &:active {
+    color: #B3B3B3;
+   }
+
   @media (min-width: @tablet-width) {
     position: absolute;
-    right: 100px;
+    right: 200px;
     top: 49px;
+    width: 30px;
+
   }
   @media (min-width: @desktop-width) {
-    position: absolute;
-    right: 118px;
-    top: 50px
+    // position: absolute;
+    right: 250px;
   }
 }
 
@@ -110,10 +124,11 @@
     left: auto;
     top: 43px;
     right: 61px;
+    width: 89px;
   }
   @media (min-width: @desktop-width) {
-    position: absolute;
-    left: auto;
+    // position: absolute;
+    right: 120px;
     top: 43px;
 
   }
@@ -122,8 +137,14 @@
 .footer__social {
   width: 48px;
   height: 48px;
+
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
+
+  &:active {
+    opacity: 0.3;
+   }
 }
+

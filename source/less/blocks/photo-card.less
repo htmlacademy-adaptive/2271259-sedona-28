@@ -18,11 +18,15 @@
   margin: 0;
   padding: 0;
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+
+
   @media (min-width: @tablet-width) {
-    // width: @tablet-width;
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
+
   }
   @media (min-width: @desktop-width) {
 
@@ -31,8 +35,49 @@
 
 
 
+.photo-card {
+  position: relative;
+  margin-top: 55px;
+
+  @media (min-width: @tablet-width) {
+
+    margin-top: 0;
+
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    background-image: url(../img/photo-divider.svg);
+    height: 1px;
+    width: 320px;
+    bottom: -25px;
+    left: -20px;
+
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+
+
+  }
+}
+
+.photo-card:not(:first-child) {
+  @media (min-width: @tablet-width) {
+    height: 347px;
+  }
+}
+
+.photos-list:first-child {
+
+  margin-top: 24px;
+
+}
+
 .photo-card__img{
   display: block;
+
+
 
   @media (min-width: @tablet-width) {
     display: none;
@@ -76,12 +121,45 @@
   }
 }
 
+.photo-card__block-creator{
+
+  @media (min-width: @tablet-width) {
+    background-color: #f2f2f2;
+    position: relative;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: rgba(0, 0, 0, 0.3);
+    // mix-blend-mode: normal;
+    width: 400px;
+
+    position: absolute;
+    bottom: 80px;
+
+  }
+}
+
 .photo-card__title{
   color: @black;
 
   .bigText();
 
   text-transform: uppercase;
+
+  margin-bottom: 5px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 0;
+    margin-left: 20px;
+    font-size: 14px;
+    line-height: 21px;
+    padding-top: 22px;
+
+  }
+  @media (min-width: @desktop-width) {
+    color: @white;
+
+  }
 }
 
 .photo-card__author{
@@ -93,6 +171,32 @@
   text-transform: capitalize;
 
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 15px;
+    margin-left: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    color: @white;
+  }
+}
+
+.photo-card__block-big{
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    right: 20px;
+    bottom: 27px;
+  }
+}
+
+.photo-card__block-small{
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    right: 20px;
+    bottom: 27px;
+  }
 }
 
 .photo-card__number-likes{
@@ -100,5 +204,39 @@
 
   .bigText();
 
+  margin: 0;
 
+  margin-left: 50px;
+  margin-top: 15px;
+
+  @media (min-width: @tablet-width) {
+    color: @white;
+  }
+
+}
+
+.photo-card__icon-like{
+  color: @black;
+
+  position: absolute;
+  bottom: 5px;
+  right: 45px;
+}
+
+
+.photo-card__block-creator--big {
+  @media (min-width: @tablet-width) {
+    background-color: #f2f2f2;
+    position: relative;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: rgba(0, 0, 0, 0.3);
+    // mix-blend-mode: normal;
+    width: 1200px;
+
+    position: absolute;
+    bottom: 0;
+
+  }
 }

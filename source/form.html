@@ -14,62 +14,64 @@
   <div class="page__wrapper">
 
 
-  <header class="main-header">
-    <div class="main-nav">
-      <div class="main-nav__wrapper">
+    <header class="main-header header--no-js">
+      <div class="main-nav">
+        <div class="main-nav__wrapper">
 
-        <ul class="main-header-nav__list">
-          <li class="main-header-nav__item ">
-            <a href="index.html" class="main-header-nav__link ">
-              главная
-            </a>
-          </li>
-          <li class="main-header-nav__item">
-            <a href="catalog.html" class="main-header-nav__link">
-              фото и видео
-            </a>
-          </li>
+          <div class="main-nav__top-bar">
+            <img src="img/logo.svg" height="96" width="185" alt="logo Sedona" class="main-header-nav__logo">
 
-          <li class="main-header-nav__item">
-            <a href="#" class="main-header-nav__link current">
-              форма отзыва
-            </a>
-          </li>
-          <li class="main-header-nav__item">
-            <a href="#" class="main-header-nav__link">
-              html academy
-            </a>
-          </li>
+            <button class="main-nav__open-menu" type="button">
+              <span class="visually-hidden">
+                Open Menu
+              </span>
+            </button>
+          </div>
 
-        </ul>
 
-        <div class="main-header-nav__logo">
-          <a href="#" class="main-header-nav__logo-link">
-            <img src="img/logo.jpg" height="96" width="185" alt="logo Sedona" class="main-header-nav__logo-image">
-          </a>
+          <nav class="main-nav__menu ">
+          <ul class="main-header-nav__list ">
+            <li class="main-header-nav__item ">
+              <a href="index.html" class="main-header-nav__link current">
+                главная
+              </a>
+            </li>
+            <li class="main-header-nav__item">
+              <a href="catalog.html" class="main-header-nav__link">
+                фото и видео
+              </a>
+            </li>
+
+            <li class="main-header-nav__item">
+              <a href="form.html" class="main-header-nav__link">
+                форма отзыва
+              </a>
+            </li>
+            <li class="main-header-nav__item">
+              <a href="#" class="main-header-nav__link">
+                html academy
+              </a>
+            </li>
+          </ul>
+          <button class="main-nav__close-menu" type="button">
+            <span class="visually-hidden">
+              Close Menu
+            </span>
+          </button>
+          </nav>
+
         </div>
+    </div>
+    </header>
 
-
-
-
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">
-          Open Menu
-        </span>
-      </button>
-      </div>
-  </div>
-  </header>
 
   <div class="form-back">
     <img src="img/sedona-form-mobile.svg" alt="welcome-text" class="form__welcome">
     <img src="img/sedona-form-tablet.svg" alt="welcome-text" class="form__welcome-tablet">
-    <img src="img/sedona-welcome-desktop.svg" alt="welcome-text" class="form__welcome-desktop">
+
   </div>
 
   <div class="container">
-
-
 
   <section class="opinion">
     <div class="opinion__wrapper">
@@ -78,7 +80,7 @@
         оставьте свой отзыв
       </h2>
       <p class="opinion__text">
-        помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
+        помогите нашим отелям стать лучше! оставьте отзыв о них,<br class="opinion__br-tablet"> а также о посещенных вами достопримечательностях
       </p>
     </div>
 
@@ -130,7 +132,11 @@
       </legend>
 
       <form action="#" class="contact-data__inputs" method="post">
-        <input type="text" name="inputs-phone" id="inputs-phone" class="contact-data__name" placeholder="Введите телефон">
+        <input type="text" name="inputs-phone" id="inputs-phone" class="contact-data__phone" placeholder="Введите телефон">
+        <div class="contact-data__icon-block">
+
+          <img src="../img/icons/icon-phone.svg" alt="" class="contact__icon-phone">
+        </div>
       </form>
 
       <legend class="contact-data__description">
@@ -138,32 +144,66 @@
       </legend>
 
       <form action="#" class="contact-data__inputs" method="post">
-        <input type="text" name="inputs-phone" id="inputs-mail" class="contact-data__name" placeholder="Введите e-mail">
+        <input type="text" name="inputs-phone" id="inputs-mail" class="contact-data__email" placeholder="Введите e-mail">
+        <div class="contact-data__icon-block">
+
+          <img src="../img/icons/icon-mail.svg" alt="" class="contact__icon-mail">
+        </div>
       </form>
 
     </div>
    </section>
   </div>
+
   <section class="rating">
     <div class="rating__wrapper">
       <h2 class="rating__title">
         ваше общее впечатление:
       </h2>
-      <label class="rating__control">
-        <input type="radio" name="radio-input" class="rating-checkbox">
+      <ul class="rating__list">
 
-        <span class="rating__legend">скорее положительное</span>
-      </label>
-      <label class="rating__control">
-        <input type="radio" name="radio-input"  class="rating__checkbox">
+        <li class="rating__item">
 
-        <span class="rating__legend">скорее отрицательное</span>
-      </label>
-      <label class="rating__control">
-        <input type="radio" name="radio-input"  class="rating__checkbox">
+          <label class="rating__control">
 
-        <span class="rating__legend">затрудняюсь ответить</span>
-      </label>
+            <input type="radio" name="radio-input" class="visually-hidden rating__control-input">
+            <span class="rating__control-mark">
+            </span>
+
+            <span class="rating__legend">
+              скорее положительное
+            </span>
+
+          </label>
+
+        </li>
+
+        <li class="rating__item">
+          <label class="rating__control">
+            <input type="radio" name="radio-input"  class="visually-hidden rating__control-input">
+            <span class="rating__control-mark">
+            </span>
+
+            <span class="rating__legend">
+              скорее отрицательное
+            </span>
+          </label>
+
+        </li>
+
+        <li class="rating__item">
+          <label class="rating__control">
+            <input type="radio" name="radio-input"  class="visually-hidden rating__control-input">
+            <span class="rating__control-mark">
+            </span>
+
+            <span class="rating__legend">затрудняюсь ответить</span>
+          </label>
+
+        </li>
+
+      </ul>
+
     </div>
   </section>
 
@@ -175,27 +215,52 @@
 
       <div class="grid-template-places">
 
+        <ul class="places__list">
+          <li class="places__item">
+            <label class="places__control">
+              <input type="checkbox" class="visually-hidden places__control-input" checked>
+              <span class="places__control-mark">
+              </span>
 
-      <label class="places__control">
-        <input type="checkbox" class="places__checkbox" checked>
+              <span class="places__legend">
+                Мост Дьявола
+              </span>
+            </label>
+          </li>
+          <li class="places__item">
+            <label class="places__control">
+              <input type="checkbox" class="visually-hidden places__control-input" checked>
+              <span class="places__control-mark">
+              </span>
 
-        <span class="places__legend">Мост Дьявола</span>
-      </label>
-      <label class="places__control">
-        <input type="checkbox" class="places__checkbox" checked>
+              <span class="places__legend">
+                Гора-Колокол
+              </span>
+            </label>
 
-        <span class="places__legend">Гора-Колокол</span>
-      </label>
-      <label class="places__control">
-        <input type="checkbox" class="places__checkbox" checked>
+          </li>
+          <li class="places__item">
+            <label class="places__control">
+              <input type="checkbox" class="visually-hidden places__control-input" checked>
+              <span class="places__control-mark">
+              </span>
 
-        <span class="places__legend">Слайд-парк</span>
-      </label>
-      <label class="places__control">
-        <input type="checkbox" class="places__checkbox" >
+              <span class="places__legend">Слайд-парк</span>
+            </label>
+          </li>
+          <li class="places__item">
+            <label class="places__control">
+              <input type="checkbox" class="visually-hidden places__control-input">
+              <span class="places__control-mark">
+              </span>
 
-        <span class="places__legend">Красные скалы</span>
-      </label>
+              <span class="places__legend">
+                Красные скалы
+              </span>
+            </label>
+          </li>
+
+        </ul>
     </div>
     </div>
 
@@ -208,7 +273,7 @@
       </h2>
 
       <form class="emotions__inputs" method="post">
-        <input type="text" name="input-emotions" id="input-emotions" class="emotions__text" placeholder="опишите подробно все свои восторги ">
+        <input type="text" name="input-emotions" id="input-emotions" class="emotions__text" placeholder="Опишите подробно все свои восторги ">
       </form>
 
       <div class="emotions__send">
@@ -254,5 +319,6 @@
     </div>
   </footer>
 </div>
+<script src="js/script.js"></script>
 </body>
 </html>

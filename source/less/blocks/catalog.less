@@ -15,7 +15,7 @@
   @media (min-width: @desktop-width) {
     width: @desktop-width;
     height: 290px;
-    background-image: url(../img/back-desktop.jpg);
+    background-image: url(../img/catalog-back-desktop.jpg);
     background-color: @black;
 
   }
@@ -35,6 +35,7 @@
       background-image: url(../img/intro-triangle-tablet-1.svg);
       width: @tablet-width;
 
+
     }
     @media (min-width: @desktop-width) {
       position: absolute;
@@ -47,6 +48,9 @@
 }
 
 .catalog__img {
+
+  transform: translate(20%, 150%);
+
   @media (min-width: @tablet-width) {
     display: none;
   }
@@ -59,8 +63,10 @@
   display: none;
   @media (min-width: @tablet-width) {
     display: block;
+    transform: translate(35%, 90%);
+
   }
-  @media (min-width: @tablet-width) {
+  @media (min-width: @desktop-width) {
     display: none;
   }
 }
@@ -71,7 +77,10 @@
   @media (min-width: @tablet-width) {
     display: none;
   }
-  @media (min-width: @tablet-width) {
+  @media (min-width: @desktop-width) {
     display: block;
+    transform: translate(80%, 120%);
+
   }
 }
+
