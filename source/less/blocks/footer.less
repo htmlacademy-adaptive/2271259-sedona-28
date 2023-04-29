@@ -1,19 +1,28 @@
 .footer {
   position: relative;
-  width: @mobile-width;
+  padding-top: 41px;
+
 
 
   @media (min-width: @tablet-width) {
 
-    width: @tablet-width;
+    padding: 36px 60px;
     min-height: 120px;
 
-    padding-top: 36px;
 
   }
   @media (min-width: @desktop-width) {
-    width: @desktop-width;
 
+
+  }
+}
+
+.footer__wrapper {
+
+
+
+  @media (min-width: @tablet-width) {
+    gap: 40px;
   }
 }
 
@@ -29,15 +38,11 @@
   margin: 0;
   @media(min-width: @tablet-width){
 
-    position: absolute;
-    left: 60px;
-
-    margin-top: 13px;
 
   }
   @media(min-width: @desktop-width){
 
-    left: 120px;
+
 
   }
 }
@@ -45,16 +50,12 @@
 .footer__list {
   display: flex;
   justify-content: center;
-  align-items: center;
   gap: 6px;
   padding: 0;
 
   @media (min-width: @tablet-width) {
-    // width: 156px;
+
     margin: 0;
-    // display: flex;
-    // justify-content: center;
-    // align-self: center;
 
 
   }
@@ -68,7 +69,7 @@
   background-color: @blue;
   width: 48px;
   height: 48px;
-  // display: inline-block;
+
  &:link, &:visited {
   background-color: @blue;
  }
@@ -91,6 +92,7 @@
   text-transform: uppercase;
 
   margin: 0;
+  margin-right: 12.5px;
 
   &:link, &:visited {
     color: @black;
@@ -103,15 +105,16 @@
    }
 
   @media (min-width: @tablet-width) {
-    position: absolute;
-    right: 200px;
-    top: 49px;
-    width: 30px;
+    // position: absolute;
+    // right: 200px;
+    // top: 49px;
+    // width: 30px;
 
   }
   @media (min-width: @desktop-width) {
     // position: absolute;
-    right: 250px;
+    // right: 250px;
+    margin-right: 12px;
   }
 }
 
@@ -120,16 +123,10 @@
   justify-content: center;
   align-items: center;
   @media (min-width: @tablet-width) {
-    position: absolute;
-    left: auto;
-    top: 43px;
-    right: 61px;
-    width: 89px;
+
   }
   @media (min-width: @desktop-width) {
-    // position: absolute;
-    right: 120px;
-    top: 43px;
+
 
   }
 }

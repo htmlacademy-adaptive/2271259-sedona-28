@@ -29,3 +29,20 @@
 
   }
 }
+
+.map__wrapper {
+  position: relative;
+}
+
+.map__marker{
+  position: absolute;
+  left: 146px;
+  top: 161px;
+
+  @media (min-width: @tablet-width) {
+    left: 370px;
+  }
+  @media (min-width: @desktop-width) {
+    left: 586px;
+  }
+}

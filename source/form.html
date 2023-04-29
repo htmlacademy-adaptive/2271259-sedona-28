@@ -18,7 +18,7 @@
       <div class="main-nav">
         <div class="main-nav__wrapper">
 
-          <div class="main-nav__top-bar">
+
             <img src="img/logo.svg" height="96" width="185" alt="logo Sedona" class="main-header-nav__logo">
 
             <button class="main-nav__open-menu" type="button">
@@ -26,13 +26,13 @@
                 Open Menu
               </span>
             </button>
-          </div>
+
 
 
           <nav class="main-nav__menu ">
           <ul class="main-header-nav__list ">
             <li class="main-header-nav__item ">
-              <a href="index.html" class="main-header-nav__link current">
+              <a href="index.html" class="main-header-nav__link ">
                 главная
               </a>
             </li>
@@ -43,7 +43,7 @@
             </li>
 
             <li class="main-header-nav__item">
-              <a href="form.html" class="main-header-nav__link">
+              <a href="form.html" class="main-header-nav__link current">
                 форма отзыва
               </a>
             </li>
@@ -64,14 +64,16 @@
     </div>
     </header>
 
-
   <div class="form-back">
+    <h1 class="visually-hidden">
+      Welcome to Sedona
+    </h1>
     <img src="img/sedona-form-mobile.svg" alt="welcome-text" class="form__welcome">
     <img src="img/sedona-form-tablet.svg" alt="welcome-text" class="form__welcome-tablet">
 
   </div>
 
-  <div class="container">
+
 
   <section class="opinion">
     <div class="opinion__wrapper">
@@ -86,6 +88,8 @@
 
   </section>
 
+  <form action="#" class="form" method="post">
+
 
   <div class="grid-template-2">
    <section class="name-data">
@@ -94,16 +98,16 @@
         представьтесь:
       </h2>
 
-      <legend class="name-data__description">
+      <legend class="name-data__description" for="inputs-name" >
         имя*:
       </legend>
 
-    <form action="#" class="name-data__inputs" method="post">
+    <label action="#" class="name-data__inputs" method="post" >
 
         <input type="text" name="inputs-name" id="inputs-name" class="name-data__name" placeholder="Пётр">
 
 
-      <legend class="name-data__description">
+      <legend class="name-data__description" for="inputs-surname">
         фамилия*:
       </legend>
 
@@ -111,13 +115,13 @@
         <input type="text" name="inputs-surname" id="inputs-surname" class="name-data__surname" placeholder="Пустота">
 
 
-      <legend class="name-data__description">
+      <legend class="name-data__description" for="inputs-second-name">
         отчество:
       </legend>
 
 
         <input type="text" name="inputs-second-name" id="inputs-second-name" class="name-data__second-name" placeholder="Викторович">
-    </form>
+    </label>
 
     </div>
    </section>
@@ -127,29 +131,29 @@
       <h2 class="contact-data__title">
         контактная информация:
       </h2>
-      <legend class="contact-data__description">
+      <legend class="contact-data__description" for="inputs-phone">
         контактный телефон*:
       </legend>
 
-      <form action="#" class="contact-data__inputs" method="post">
+      <label action="#" class="contact-data__inputs" method="post">
         <input type="text" name="inputs-phone" id="inputs-phone" class="contact-data__phone" placeholder="Введите телефон">
         <div class="contact-data__icon-block">
 
           <img src="../img/icons/icon-phone.svg" alt="" class="contact__icon-phone">
         </div>
-      </form>
+      </label>
 
-      <legend class="contact-data__description">
+      <legend class="contact-data__description" for="inputs-mail">
         электронная почта*:
       </legend>
 
-      <form action="#" class="contact-data__inputs" method="post">
+      <label action="#" class="contact-data__inputs" method="post">
         <input type="text" name="inputs-phone" id="inputs-mail" class="contact-data__email" placeholder="Введите e-mail">
         <div class="contact-data__icon-block">
 
           <img src="../img/icons/icon-mail.svg" alt="" class="contact__icon-mail">
         </div>
-      </form>
+      </label>
 
     </div>
    </section>
@@ -272,52 +276,60 @@
         опишите свои эмоции:
       </h2>
 
-      <form class="emotions__inputs" method="post">
+      <label class="emotions__inputs" method="post" action="">
         <input type="text" name="input-emotions" id="input-emotions" class="emotions__text" placeholder="Опишите подробно все свои восторги ">
-      </form>
+      </label>
 
       <div class="emotions__send">
 
-      <button class="emotions__button" type="button">
+      <button class="emotions__button" type="submit">
         отправить отзыв
       </button>
       <legend class="emotions__obligatory">
-        * — обязательные поля
+        <p class="emotions__obligatory-text">
+
+           * — обязательные поля
+        </p>
       </legend>
     </div>
     </div>
   </section>
-</div>
-  <footer class="footer">
-    <div class="footer__wrapper">
-        <p class="footer__hashtag">
-          #visitsedona
-        </p>
-        <ul class="footer__list">
-          <li class="footer__item footer__vk">
-            <a href="#" class="footer__social">
-              <img src="img/icons/icon-vk.svg" alt="icon of vkontakte">
-            </a>
-          </li>
-          <li class="footer__item footer__tg">
-            <a href="#" class="footer__social">
-              <img src="img/icons/icon-tg.svg" alt="icon of telegram">
-            </a>
-          </li>
-          <li class="footer__item footer__yt">
-            <a href="#" class="footer__social">
-              <img src="img/icons/icon-youtube.svg" alt="icon of youtube">
-            </a>
-          </li>
-        </ul>
+</form>
+
+<footer class="footer">
+  <div class="footer__wrapper container">
+
+      <p class="footer__hashtag">
+        #visitsedona
+      </p>
+
+      <ul class="footer__list">
+        <li class="footer__item footer__vk">
+          <a href="#" class="footer__social">
+            <img src="img/icons/icon-vk.svg" alt="icon of vkontakte">
+          </a>
+        </li>
+        <li class="footer__item footer__tg">
+          <a href="#" class="footer__social">
+            <img src="img/icons/icon-tg.svg" alt="icon of telegram">
+          </a>
+        </li>
+        <li class="footer__item footer__yt">
+          <a href="#" class="footer__social">
+            <img src="img/icons/icon-youtube.svg" alt="icon of youtube">
+          </a>
+        </li>
+      </ul>
+
+      <a href="#" class="footer__link">
         <p class="footer__text">
           разработано
         </p>
-        <a href="#" class="footer__link">
-          <img src="img/icons/htmlacademy.svg" alt="icon of htmlacademy">
-        </a>
-    </div>
-  </footer>
+        <img src="img/icons/htmlacademy.svg" alt="icon of htmlacademy" class="footer__icon-html">
+      </a>
+
+  </div>
+</footer>
 </div>
 <script src="js/script.js"></script>
 </body>

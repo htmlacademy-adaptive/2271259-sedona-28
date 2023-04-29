@@ -4,7 +4,7 @@
   align-items: center;
 
   margin-top: 24px;
-  margin-bottom: 55px;
+
 
   position: relative;
   @media (min-width: @tablet-width) {
@@ -69,6 +69,8 @@
   width: 279px;
   height: 150px;
   margin-bottom: 56px;
+  padding-bottom: 80px;
+  padding-left: 16px;
 
   @media (min-width: @tablet-width) {
     width:  648px;
@@ -125,12 +127,18 @@
   text-align: center;
   text-transform: uppercase;
 
+  ;
 
   @media (min-width: @tablet-width) {
     margin-left: auto;
     margin-top: 20px;
   }
 
+}
+
+.emotions__obligatory-text{
+  margin: 0;
+  float: right;
 }
 
 .emotions__send{
@@ -141,6 +149,8 @@
 }
 
 .emotions__text::placeholder {
+
+
   font-family: 'PT Sans';
   font-style: normal;
   font-weight: 700;
@@ -156,3 +166,4 @@
     padding-left: 16px;
   }
 }
+

@@ -10,7 +10,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  width: @pw;
+  min-width: @pw;
   font-family: "PT Sans", sans-serif;
 
 }
@@ -41,40 +41,37 @@ li {
 .container {
   width: 320px;
   margin: 0 auto;
-  // margin-left: 20px;
+
 
 
   @media (min-width: @tablet-width) {
-    width: @tablet-width;
+    width: 648px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: space-between;
+
   }
   @media (min-width: @desktop-width) {
-    width: @desktop-width;
+    width: 988px
 
   }
 }
 
 .page__wrapper{
+  max-width: @mobile-width;
+
+  @media (min-width: @tablet-width) {
+    max-width: @tablet-width;
+  }
 
   @media (min-width: @desktop-width) {
     max-width: @desktop-width;
     margin: 0 auto;
+    box-shadow: 0 0 4px #000000;
+
 
 
   }
 }
 
 
-// .container-tablet {
-//   width: 320px;
-//   margin: 0 auto;
-//   // margin-left: 20px;
-
-//   @media (min-width: @tablet-width) {
-
-
-//   }
-// }

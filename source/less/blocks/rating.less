@@ -22,7 +22,7 @@
       content: "";
       background-image: url(../img/small-divider.svg);
       height: 1px;
-      width: 280px;
+      width: 123px;
       top: 30px;
       right: 60px;
     }
@@ -47,7 +47,7 @@
       left: 60px;
     }
 
-    @media (min-width: @tablet-width) {
+    @media (min-width: @desktop-width) {
       width: 280px;
     }
   }
@@ -126,6 +126,9 @@
   margin-bottom: 16px;
 
   @media (min-width: @tablet-width) {
+
+  }
+  @media (min-width: @desktop-width) {
     margin-right: 60px;
   }
 }
@@ -170,3 +173,16 @@
   }
 }
 
+
+.rating__control-input[type="radio"]:checked + .rating__control-mark::before {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 16px;
+  height: 16px;
+  background-image: url(../img/dot.svg);
+  border-radius: 50%;
+  content: "";
+
+
+}

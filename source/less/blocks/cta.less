@@ -1,23 +1,21 @@
 
 .cta {
-  width: @mobile-width;
+
 
   @media (min-width: @tablet-width) {
-    width: @tablet-width;
+
     display: flex;
     justify-content: center;
     align-items: center;
 
   }
   @media (min-width: @desktop-width) {
-    width: @desktop-width;
+
 
   }
 }
 
 .cta__title{
-
-
 
   display: flex;
   align-items: center;
@@ -25,7 +23,14 @@
   text-align: center;
   text-transform: uppercase;
 
+  font-size: 21px;
+  line-height: 26px;
+
   margin-top: 38px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+  }
 }
 
 .cta__text{

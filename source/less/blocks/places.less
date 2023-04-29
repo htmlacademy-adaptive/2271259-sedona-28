@@ -103,14 +103,14 @@
 
   @media (min-width: @tablet-width) {
     width: 480px;
-    display: flex;
-    justify-content: center;
+  
+    column-count: 2;
 
-    flex-wrap: wrap;
   }
   @media (min-width: @desktop-width) {
     width: 960px;
     display: flex;
+    justify-content: center;
     flex-wrap: nowrap;
   }
 }
@@ -158,3 +158,18 @@
     background-color: #D5D5D5;
   }
 }
+
+
+
+.places__control-input[type="checkbox"]:checked + .places__control-mark::before,
+.places__control-input[type="checkbox"]:checked + .places__control-mark::after {
+  position: absolute;
+  top: 15px;
+  left: 12px;
+  width: 22px;
+  height: 16px;
+  background-image: url(../img/tick.svg);
+  content: "";
+}
+
+

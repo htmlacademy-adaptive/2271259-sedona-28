@@ -17,7 +17,7 @@
       <div class="main-nav">
         <div class="main-nav__wrapper">
 
-          <div class="main-nav__top-bar">
+
             <img src="img/logo.svg" height="96" width="185" alt="logo Sedona" class="main-header-nav__logo">
 
             <button class="main-nav__open-menu" type="button">
@@ -25,18 +25,18 @@
                 Open Menu
               </span>
             </button>
-          </div>
+
 
 
           <nav class="main-nav__menu ">
           <ul class="main-header-nav__list ">
             <li class="main-header-nav__item ">
-              <a href="index.html" class="main-header-nav__link current">
+              <a href="index.html" class="main-header-nav__link ">
                 главная
               </a>
             </li>
             <li class="main-header-nav__item">
-              <a href="catalog.html" class="main-header-nav__link">
+              <a href="catalog.html" class="main-header-nav__link current">
                 фото и видео
               </a>
             </li>
@@ -66,7 +66,7 @@
 
   <main class="catalog">
     <h1 class="visually-hidden">
-      photo
+      Welcome to Sedona
     </h1>
 
     <div class="catalog__back-img">
@@ -75,7 +75,7 @@
       <img src="img/sedona-catalog-desktop.svg" alt="sedona-text" class="catalog__img-desktop">
     </div>
 
-     <div class="container">
+
     <section class="catalog-desc">
 
       <div class="catalog-desc__wrapper">
@@ -107,20 +107,23 @@
               <img src="img/photo-1-desktop.jpg" alt="photo of cactus" class="photo-card__img-desktop">
               <div class="photo-card__block-creator--big">
 
-              <h3 class="photo-card__title">
-                неродные просторы
-              </h3>
-              <p class="photo-card__author">
-                автор фото: борис
-              </p>
+                <div class="photo-card__block-description">
 
-              <div class="photo-card__block-big">
+                  <h3 class="photo-card__title">
+                    неродные просторы
+                  </h3>
+                  <p class="photo-card__author">
+                    автор фото: борис
+                  </p>
+                </div>
+
+                <div class="photo-card__block-big">
 
                 <img src="img/icons/icon-like.svg" alt="icon of like" class="photo-card__icon-like">
                 <p class="photo-card__number-likes">
                   1350
                 </p>
-              </div>
+                </div>
               </div>
           </li>
 
@@ -133,13 +136,14 @@
 
               <div class="photo-card__block-creator">
 
+                <div class="photo-card__block-description">
                 <h3 class="photo-card__title">
                   местная растительность
                 </h3>
                 <p class="photo-card__author">
                   Автор фото: Сергей
                 </p>
-
+                </div>
                 <div class="photo-card__block-small">
 
                   <img src="img/icons/icon-like.svg" alt="icon of like" class="photo-card__icon-like">
@@ -157,13 +161,15 @@
             <img src="img/photo-3-desktop.jpg" alt="photo of forest" class="photo-card__img-desktop">
 
             <div class="photo-card__block-creator">
+
+              <div class="photo-card__block-description">
               <h3 class="photo-card__title">
                 Дорога на север
               </h3>
               <p class="photo-card__author">
                 Автор фото: Петр
               </p>
-
+              </div>
               <div class="photo-card__block-small">
               <img src="img/icons/icon-like.svg" alt="icon ofl like" class="photo-card__icon-like">
               <p class="photo-card__number-likes">
@@ -180,12 +186,16 @@
             <img src="img/photo-4-desktop.jpg" alt="photo of mountains" class="photo-card__img-desktop">
 
             <div class="photo-card__block-creator">
+              <div class="photo-card__block-description">
+
               <h3 class="photo-card__title">
                 Мост дьявола
               </h3>
               <p class="photo-card__author">
                 Автор фото: Антон
               </p>
+
+              </div>
 
               <div class="photo-card__block-small">
 
@@ -204,7 +214,7 @@
       </div>
 
     </section>
-  </div>
+
 
 
     <section class="video">
@@ -218,7 +228,7 @@
           </h2>
 
           <p class="video__text">
-            Смотрите видеопрезентацию и <br class="video__br-mobile">скорее за билетами, пока они<br class="video__br-tablet"> не <br class="video__br-mobile"> подорожали в очередной раз!
+            Смотрите видеопрезентацию и <br class="video__br-mobile">скорее за билетами, пока они<br class="video__br-tablet"> не подорожали в очередной раз!
           </p>
         </div>
 
@@ -236,10 +246,12 @@
 
 
     <footer class="footer">
-      <div class="footer__wrapper">
+      <div class="footer__wrapper container">
+
           <p class="footer__hashtag">
             #visitsedona
           </p>
+
           <ul class="footer__list">
             <li class="footer__item footer__vk">
               <a href="#" class="footer__social">
@@ -257,12 +269,14 @@
               </a>
             </li>
           </ul>
-          <p class="footer__text">
-            разработано
-          </p>
+
           <a href="#" class="footer__link">
-            <img src="img/icons/htmlacademy.svg" alt="icon of htmlacademy">
+            <p class="footer__text">
+              разработано
+            </p>
+            <img src="img/icons/htmlacademy.svg" alt="icon of htmlacademy" class="footer__icon-html">
           </a>
+
       </div>
     </footer>
   </main>
