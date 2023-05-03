@@ -14,60 +14,64 @@
   <div class="page__wrapper">
 
 
-  <header class="main-header">
-    <div class="main-nav">
-      <div class="main-nav__wrapper">
+    <header class="main-header header--no-js">
+      <div class="main-nav">
+        <div class="main-nav__wrapper">
 
-        <ul class="main-header-nav__list">
-          <li class="main-header-nav__item ">
-            <a href="index.html" class="main-header-nav__link ">
-              главная
-            </a>
-          </li>
-          <li class="main-header-nav__item">
-            <a href="catalog.html" class="main-header-nav__link">
-              фото и видео
-            </a>
-          </li>
 
-          <li class="main-header-nav__item">
-            <a href="#" class="main-header-nav__link current">
-              форма отзыва
-            </a>
-          </li>
-          <li class="main-header-nav__item">
-            <a href="#" class="main-header-nav__link">
-              html academy
-            </a>
-          </li>
+            <img src="img/logo.svg" height="96" width="185" alt="logo Sedona" class="main-header-nav__logo">
 
-        </ul>
+            <button class="main-nav__open-menu" type="button">
+              <span class="visually-hidden">
+                Open Menu
+              </span>
+            </button>
 
-        <div class="main-header-nav__logo">
-          <a href="#" class="main-header-nav__logo-link">
-            <img src="img/logo.jpg" height="96" width="185" alt="logo Sedona" class="main-header-nav__logo-image">
-          </a>
+
+
+          <nav class="main-nav__menu ">
+          <ul class="main-header-nav__list ">
+            <li class="main-header-nav__item ">
+              <a href="index.html" class="main-header-nav__link ">
+                главная
+              </a>
+            </li>
+            <li class="main-header-nav__item">
+              <a href="catalog.html" class="main-header-nav__link">
+                фото и видео
+              </a>
+            </li>
+
+            <li class="main-header-nav__item">
+              <a href="form.html" class="main-header-nav__link current">
+                форма отзыва
+              </a>
+            </li>
+            <li class="main-header-nav__item">
+              <a href="#" class="main-header-nav__link">
+                html academy
+              </a>
+            </li>
+          </ul>
+          <button class="main-nav__close-menu" type="button">
+            <span class="visually-hidden">
+              Close Menu
+            </span>
+          </button>
+          </nav>
+
         </div>
-
-
-
-
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">
-          Open Menu
-        </span>
-      </button>
-      </div>
-  </div>
-  </header>
+    </div>
+    </header>
 
   <div class="form-back">
+    <h1 class="visually-hidden">
+      Welcome to Sedona
+    </h1>
     <img src="img/sedona-form-mobile.svg" alt="welcome-text" class="form__welcome">
     <img src="img/sedona-form-tablet.svg" alt="welcome-text" class="form__welcome-tablet">
-    <img src="img/sedona-welcome-desktop.svg" alt="welcome-text" class="form__welcome-desktop">
-  </div>
 
-  <div class="container">
+  </div>
 
 
 
@@ -78,11 +82,13 @@
         оставьте свой отзыв
       </h2>
       <p class="opinion__text">
-        помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
+        помогите нашим отелям стать лучше! оставьте отзыв о них,<br class="opinion__br-tablet"> а также о посещенных вами достопримечательностях
       </p>
     </div>
 
   </section>
+
+  <form action="#" class="form" method="post">
 
 
   <div class="grid-template-2">
@@ -92,16 +98,16 @@
         представьтесь:
       </h2>
 
-      <legend class="name-data__description">
+      <legend class="name-data__description" for="inputs-name" >
         имя*:
       </legend>
 
-    <form action="#" class="name-data__inputs" method="post">
+    <label action="#" class="name-data__inputs" method="post" >
 
         <input type="text" name="inputs-name" id="inputs-name" class="name-data__name" placeholder="Пётр">
 
 
-      <legend class="name-data__description">
+      <legend class="name-data__description" for="inputs-surname">
         фамилия*:
       </legend>
 
@@ -109,13 +115,13 @@
         <input type="text" name="inputs-surname" id="inputs-surname" class="name-data__surname" placeholder="Пустота">
 
 
-      <legend class="name-data__description">
+      <legend class="name-data__description" for="inputs-second-name">
         отчество:
       </legend>
 
 
         <input type="text" name="inputs-second-name" id="inputs-second-name" class="name-data__second-name" placeholder="Викторович">
-    </form>
+    </label>
 
     </div>
    </section>
@@ -125,45 +131,83 @@
       <h2 class="contact-data__title">
         контактная информация:
       </h2>
-      <legend class="contact-data__description">
+      <legend class="contact-data__description" for="inputs-phone">
         контактный телефон*:
       </legend>
 
-      <form action="#" class="contact-data__inputs" method="post">
-        <input type="text" name="inputs-phone" id="inputs-phone" class="contact-data__name" placeholder="Введите телефон">
-      </form>
+      <label action="#" class="contact-data__inputs" method="post">
+        <input type="text" name="inputs-phone" id="inputs-phone" class="contact-data__phone" placeholder="Введите телефон">
+        <div class="contact-data__icon-block">
 
-      <legend class="contact-data__description">
+          <img src="../img/icons/icon-phone.svg" alt="" class="contact__icon-phone">
+        </div>
+      </label>
+
+      <legend class="contact-data__description" for="inputs-mail">
         электронная почта*:
       </legend>
 
-      <form action="#" class="contact-data__inputs" method="post">
-        <input type="text" name="inputs-phone" id="inputs-mail" class="contact-data__name" placeholder="Введите e-mail">
-      </form>
+      <label action="#" class="contact-data__inputs" method="post">
+        <input type="text" name="inputs-phone" id="inputs-mail" class="contact-data__email" placeholder="Введите e-mail">
+        <div class="contact-data__icon-block">
+
+          <img src="../img/icons/icon-mail.svg" alt="" class="contact__icon-mail">
+        </div>
+      </label>
 
     </div>
    </section>
   </div>
+
   <section class="rating">
     <div class="rating__wrapper">
       <h2 class="rating__title">
         ваше общее впечатление:
       </h2>
-      <label class="rating__control">
-        <input type="radio" name="radio-input" class="rating-checkbox">
+      <ul class="rating__list">
 
-        <span class="rating__legend">скорее положительное</span>
-      </label>
-      <label class="rating__control">
-        <input type="radio" name="radio-input"  class="rating__checkbox">
+        <li class="rating__item">
 
-        <span class="rating__legend">скорее отрицательное</span>
-      </label>
-      <label class="rating__control">
-        <input type="radio" name="radio-input"  class="rating__checkbox">
+          <label class="rating__control">
 
-        <span class="rating__legend">затрудняюсь ответить</span>
-      </label>
+            <input type="radio" name="radio-input" class="visually-hidden rating__control-input">
+            <span class="rating__control-mark">
+            </span>
+
+            <span class="rating__legend">
+              скорее положительное
+            </span>
+
+          </label>
+
+        </li>
+
+        <li class="rating__item">
+          <label class="rating__control">
+            <input type="radio" name="radio-input"  class="visually-hidden rating__control-input">
+            <span class="rating__control-mark">
+            </span>
+
+            <span class="rating__legend">
+              скорее отрицательное
+            </span>
+          </label>
+
+        </li>
+
+        <li class="rating__item">
+          <label class="rating__control">
+            <input type="radio" name="radio-input"  class="visually-hidden rating__control-input">
+            <span class="rating__control-mark">
+            </span>
+
+            <span class="rating__legend">затрудняюсь ответить</span>
+          </label>
+
+        </li>
+
+      </ul>
+
     </div>
   </section>
 
@@ -175,27 +219,52 @@
 
       <div class="grid-template-places">
 
+        <ul class="places__list">
+          <li class="places__item">
+            <label class="places__control">
+              <input type="checkbox" class="visually-hidden places__control-input" checked>
+              <span class="places__control-mark">
+              </span>
 
-      <label class="places__control">
-        <input type="checkbox" class="places__checkbox" checked>
+              <span class="places__legend">
+                Мост Дьявола
+              </span>
+            </label>
+          </li>
+          <li class="places__item">
+            <label class="places__control">
+              <input type="checkbox" class="visually-hidden places__control-input" checked>
+              <span class="places__control-mark">
+              </span>
 
-        <span class="places__legend">Мост Дьявола</span>
-      </label>
-      <label class="places__control">
-        <input type="checkbox" class="places__checkbox" checked>
+              <span class="places__legend">
+                Гора-Колокол
+              </span>
+            </label>
 
-        <span class="places__legend">Гора-Колокол</span>
-      </label>
-      <label class="places__control">
-        <input type="checkbox" class="places__checkbox" checked>
+          </li>
+          <li class="places__item">
+            <label class="places__control">
+              <input type="checkbox" class="visually-hidden places__control-input" checked>
+              <span class="places__control-mark">
+              </span>
 
-        <span class="places__legend">Слайд-парк</span>
-      </label>
-      <label class="places__control">
-        <input type="checkbox" class="places__checkbox" >
+              <span class="places__legend">Слайд-парк</span>
+            </label>
+          </li>
+          <li class="places__item">
+            <label class="places__control">
+              <input type="checkbox" class="visually-hidden places__control-input">
+              <span class="places__control-mark">
+              </span>
 
-        <span class="places__legend">Красные скалы</span>
-      </label>
+              <span class="places__legend">
+                Красные скалы
+              </span>
+            </label>
+          </li>
+
+        </ul>
     </div>
     </div>
 
@@ -207,52 +276,61 @@
         опишите свои эмоции:
       </h2>
 
-      <form class="emotions__inputs" method="post">
-        <input type="text" name="input-emotions" id="input-emotions" class="emotions__text" placeholder="опишите подробно все свои восторги ">
-      </form>
+      <label class="emotions__inputs" method="post" action="">
+        <input type="text" name="input-emotions" id="input-emotions" class="emotions__text" placeholder="Опишите подробно все свои восторги ">
+      </label>
 
       <div class="emotions__send">
 
-      <button class="emotions__button" type="button">
+      <button class="emotions__button" type="submit">
         отправить отзыв
       </button>
       <legend class="emotions__obligatory">
-        * — обязательные поля
+        <p class="emotions__obligatory-text">
+
+           * — обязательные поля
+        </p>
       </legend>
     </div>
     </div>
   </section>
-</div>
-  <footer class="footer">
-    <div class="footer__wrapper">
-        <p class="footer__hashtag">
-          #visitsedona
-        </p>
-        <ul class="footer__list">
-          <li class="footer__item footer__vk">
-            <a href="#" class="footer__social">
-              <img src="img/icons/icon-vk.svg" alt="icon of vkontakte">
-            </a>
-          </li>
-          <li class="footer__item footer__tg">
-            <a href="#" class="footer__social">
-              <img src="img/icons/icon-tg.svg" alt="icon of telegram">
-            </a>
-          </li>
-          <li class="footer__item footer__yt">
-            <a href="#" class="footer__social">
-              <img src="img/icons/icon-youtube.svg" alt="icon of youtube">
-            </a>
-          </li>
-        </ul>
+</form>
+
+<footer class="footer">
+  <div class="footer__wrapper container">
+
+      <p class="footer__hashtag">
+        #visitsedona
+      </p>
+
+      <ul class="footer__list">
+        <li class="footer__item footer__vk">
+          <a href="#" class="footer__social">
+            <img src="img/icons/icon-vk.svg" alt="icon of vkontakte">
+          </a>
+        </li>
+        <li class="footer__item footer__tg">
+          <a href="#" class="footer__social">
+            <img src="img/icons/icon-tg.svg" alt="icon of telegram">
+          </a>
+        </li>
+        <li class="footer__item footer__yt">
+          <a href="#" class="footer__social">
+            <img src="img/icons/icon-youtube.svg" alt="icon of youtube">
+          </a>
+        </li>
+      </ul>
+
+      <a href="#" class="footer__link">
         <p class="footer__text">
           разработано
         </p>
-        <a href="#" class="footer__link">
-          <img src="img/icons/htmlacademy.svg" alt="icon of htmlacademy">
-        </a>
-    </div>
-  </footer>
+        <img src="img/icons/htmlacademy.svg" alt="icon of htmlacademy" class="footer__icon-html">
+      </a>
+
+  </div>
+</footer>
 </div>
+<script src="js/script.js"></script>
 </body>
 </html>

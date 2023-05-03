@@ -3,6 +3,10 @@
   justify-content: center;
   align-items: center;
 
+  margin-top: 28px;
+
+  position: relative;
+
   @media (min-width: @tablet-width) {
     width: @tablet-width;
   }
@@ -53,6 +57,10 @@
 
   text-transform: uppercase;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+  }
 }
 
 .video__text{
@@ -61,5 +69,31 @@
 
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 38px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 64px;
+  }
 }
 
+.video__icon-play {
+  position: absolute;
+  top: 200px;
+  left: 136px;
+
+  @media (min-width: @tablet-width) {
+    left: 360px;
+    top: 355px;
+  }
+  @media (min-width: @desktop-width) {
+    left: 575px;
+    top: 420px;
+  }
+}
+
+.video__br-mobile{
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}

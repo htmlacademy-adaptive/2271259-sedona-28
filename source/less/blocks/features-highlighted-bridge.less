@@ -1,7 +1,6 @@
 
 .features-highlighted-bridge{
 
-  margin-top: 7px;
   position: relative;
 
   width: 320px;
@@ -51,6 +50,7 @@
 
   @media(min-width: @tablet-width) {
     margin: 0;
+    padding-top: 0;
 
 
   }
@@ -99,6 +99,7 @@
   @media(min-width: @tablet-width) {
 
     margin-top: 17px;
+    padding-bottom: 0;
 
   }
 
@@ -165,5 +166,15 @@
   @media (min-width: @desktop-width) {
     width: 400px;
     min-height: 256px;
+  }
+}
+
+.features-highlighted-bridge__br-desktop{
+  display: none;
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+  @media (min-width: @desktop-width) {
+    display: block;
   }
 }

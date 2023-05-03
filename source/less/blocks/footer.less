@@ -1,23 +1,28 @@
 .footer {
   position: relative;
-  width: @mobile-width;
+  padding-top: 41px;
+
+
 
   @media (min-width: @tablet-width) {
 
-    width: @tablet-width;
+    padding: 36px 60px;
     min-height: 120px;
-
-    margin: auto;
-    padding-top: 36px;
 
 
   }
   @media (min-width: @desktop-width) {
-    width: @desktop-width;
+
+
+  }
+}
+
+.footer__wrapper {
 
 
 
-
+  @media (min-width: @tablet-width) {
+    gap: 40px;
   }
 }
 
@@ -26,46 +31,36 @@
 
   .bigText();
 
-  text-transform: uppercase;
   text-align: center;
+  text-transform: uppercase;
+
 
   margin: 0;
   @media(min-width: @tablet-width){
-    position: absolute;
-    left: 60px;
+
 
   }
   @media(min-width: @desktop-width){
-    position: absolute;
-    left: 120px;
-    top: 47px
+
+
+
   }
 }
 
 .footer__list {
   display: flex;
   justify-content: center;
-  align-items: center;
   gap: 6px;
+  padding: 0;
 
   @media (min-width: @tablet-width) {
-    width: 156px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 6px;
-    position: absolute;
-    left: 200px;
+
+    margin: 0;
 
 
   }
   @media (min-width: @desktop-width) {
-    position: absolute;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 6px;
-    left: 525px;
-    top: 16px;
-    bottom: 36px;
+
 
   }
 }
@@ -74,8 +69,16 @@
   background-color: @blue;
   width: 48px;
   height: 48px;
-  display: inline-block;
 
+ &:link, &:visited {
+  background-color: @blue;
+ }
+ &:hover, &:focus {
+  background-color: #669EC0;
+ }
+ &:active {
+  background-color: #5496BD;
+ }
 }
 
 
@@ -89,16 +92,29 @@
   text-transform: uppercase;
 
   margin: 0;
+  margin-right: 12.5px;
+
+  &:link, &:visited {
+    color: @black;
+   }
+   &:hover, &:focus {
+    color: #81B3D2;
+   }
+   &:active {
+    color: #B3B3B3;
+   }
 
   @media (min-width: @tablet-width) {
-    position: absolute;
-    right: 118px;
-    top: 39px;
+    // position: absolute;
+    // right: 200px;
+    // top: 49px;
+    // width: 30px;
+
   }
   @media (min-width: @desktop-width) {
-    position: absolute;
-    right: 118px;
-    top: 50px
+    // position: absolute;
+    // right: 250px;
+    margin-right: 12px;
   }
 }
 
@@ -107,21 +123,25 @@
   justify-content: center;
   align-items: center;
   @media (min-width: @tablet-width) {
-    position: absolute;
-    left: auto;
 
-    right: 61px;
   }
   @media (min-width: @desktop-width) {
-    position: absolute;
-    left: auto;
-    top: 43px;
+
 
   }
 }
 
-.footer-social {
+.footer__social {
+  width: 48px;
+  height: 48px;
+
   display: flex;
-  justify-self: center;
-  align-self: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+
+  &:active {
+    opacity: 0.3;
+   }
 }
+
