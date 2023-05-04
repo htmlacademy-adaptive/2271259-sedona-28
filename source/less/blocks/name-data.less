@@ -95,15 +95,6 @@
   padding: 16px;
 }
 
-.name-data__name::placeholder, .name-data__surname::placeholder, .name-data__second-name::placeholder  {
-  color: @black;
-
-  font-family: 'PT Sans';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-}
 
 .grid-template-2{
   @media (min-width: @tablet-width) {
@@ -120,6 +111,13 @@
 
 .name-data__name, .name-data__surname, .name-data__second-name{
   width: 280px;
+  color: @black;
+
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
 
   &:hover, &:focus {
     background-color: #E5E5E5;
@@ -133,3 +131,4 @@
     width: 430px;
   }
 }
+

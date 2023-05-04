@@ -78,15 +78,13 @@
 
 
   &:link, &:visited {
-      color: @white;
-      background-color: @blue;
+    color: @white;
+    background-color: @blue;
   }
 
   &:hover, &:focus {
       color: @white;
       background-color: #669EC0;
-
-
 
   }
 
@@ -177,6 +175,17 @@
     white-space: nowrap;
     color: @black;
 
+    &:link, &:visited {
+      color: @black;
+    }
+    &:hover, :focus {
+      color: #81B3D2;
+    }
+
+    &:active {
+      color: #B3B3B3;
+    }
+
   }
 }
 
@@ -185,6 +194,9 @@
   @media (min-width: @tablet-width) {
 
     color: #766357;
+    &:link, &:visited {
+      color: #766357;
+    }
   }
 }
 

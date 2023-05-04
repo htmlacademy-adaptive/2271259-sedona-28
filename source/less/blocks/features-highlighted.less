@@ -16,19 +16,6 @@
   }
 }
 
-.block {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  background-color: @blue;
-
-  @media (min-width: @tablet-width) {
-    padding-left: 33px;
-    padding-right: 33px;
-  }
-}
 
 .features-highlighted__title {
 
@@ -134,9 +121,17 @@
   width: @mobile-width;
   min-height: 211px;
 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
   @media (min-width: @tablet-width) {
     width: 356px;
     min-height: 256px;
+
+    padding-left: 33px;
+    padding-right: 33px;
   }
   @media (min-width: @desktop-width) {
     width: 400px;

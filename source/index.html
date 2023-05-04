@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" >
+    <link rel="icon" href="favicon.ico/favicon.jpg">
     <meta name="viewport"
     content="width=device-width, initial=1">
   </head>
@@ -113,9 +114,17 @@
                 седона не аттракцион для туристов,<br class="features-highlighted__br-mobile"> там течет своя <br class="features-highlighted__br-tablet features-highlighted__br-desktop">жизнь
               </p>
             </div>
-            <img src="img/photo-city-mobile.jpg" height="256" width="800" alt="photo of bar" class="features-highlighted__img">
-            <img src="img/photo-city-tablet.jpg" height="256" width="800" alt="photo of bar" class="features-highlighted__img-tablet">
-            <img src="img/photo-city-desktop.jpg" height="256" width="800" alt="photo of bar" class="features-highlighted__img-desktop">
+
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-city-desktop.jpg 1x, img/photo-city-desktop@2x.jpg 2x">
+              <img src="img/photo-city-desktop.jpg" height="256" width="800" alt="photo of bar" class="features-highlighted__img-desktop" srcset="img/photo-city-desktop@2x.jpg 2x">
+
+              <source media="(min-width: 768px)" srcset="img/photo-city-tablet.jpg 1x, img/photo-city-tablet@2x.jpg 2x">
+              <img src="img/photo-city-tablet.jpg" height="256" width="800" alt="photo of bar" class="features-highlighted__img-tablet" srcset="img/photo-city-tablet@2x.jpg 2x">
+
+              <img src="img/photo-city-mobile.jpg" height="256" width="800" alt="photo of bar" class="features-highlighted__img" srcset="img/photo-city-mobile@2x.jpg 2x">
+            </picture>
+
             </div>
 
           <div class="complementaries">
@@ -167,8 +176,14 @@
 
           <div class="features-highlighted-bridge ">
 
-            <img src="img/photo-bridge-tablet.jpg" height="256" width="800" alt="photo of rock bridge" class="features-highlighted-bridge__img-tablet">
-            <img src="img/photo-bridge-desktop.jpg" height="256" width="800" alt="photo of rock bridge" class="features-highlighted-bridge__img-desktop">
+            <picture>
+
+              <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+              <img src="img/photo-bridge-desktop.jpg" height="256" width="800" alt="photo of rock bridge" class="features-highlighted-bridge__img-desktop">
+
+              <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+              <img src="img/photo-bridge-tablet.jpg" height="256" width="800" alt="photo of rock bridge" class="features-highlighted-bridge__img-tablet">
+            </picture>
 
             <div class="block">
 
@@ -183,7 +198,7 @@
               </p>
             </div>
 
-            <img src="img/photo-bridge-mobile.jpg" height="256" width="800" alt="photo of rock bridge" class="features-highlighted-bridge__img">
+            <img src="img/photo-bridge-mobile.jpg" height="256" width="800" alt="photo of rock bridge" class="features-highlighted-bridge__img" srcset="img/photo-bridge-mobile2x.jpg 2x">
 
 
           </div>
@@ -255,9 +270,17 @@
         </h2>
         <div class="map__wrapper">
           <img src="img/map-marker.svg" alt="map-market" class="map__marker">
-          <img src="img/map-mobile.jpg" alt="map from google" class="map__img">
-          <img src="img/map-tablet.jpg" alt="map from google" class="map__img-tablet">
-          <img src="img/map-desktop.jpg" alt="map from google" class="map__img-desktop">
+
+          <picture>
+
+            <source media="(min-width: 1200px)" srcset="img/map-desktop.jpg 1x, img/map-desktop@2x.jpg 2x">
+            <img src="img/map-desktop.jpg" alt="map from google" class="map__img-desktop">
+
+            <source media="(min-width: 768px)" srcset="img/map-tablet.jpg 1x, img/map-tablet@2x.jpg 2x">
+            <img src="img/map-tablet.jpg" alt="map from google" class="map__img-tablet">
+
+            <img src="img/map-mobile.jpg" alt="map from google" class="map__img" srcset="img/map-mobile@2x.jpg 2x">
+          </picture>
         </div>
       </section>
 

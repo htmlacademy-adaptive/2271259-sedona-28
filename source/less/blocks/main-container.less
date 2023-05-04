@@ -1,30 +1,36 @@
+.main-container__welcome{
+  display: block;
+
+  margin: 0 auto;
+  @media(min-width: @tablet-width) {
+    display: none;
+  }
+}
 
 
 .main-container__img {
   width: 320px;
   min-height: 389px;
-  background-image: url(../img/back-mobile.jpg.jpg);
+  background-image: url(../img/index-back-mobile.jpg);
   background-color: #000000;
   color: white;
   position: relative;
+
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
 
   @media(min-width: @tablet-width) {
-    // min-width: @tablet-width;
+
     min-height: 518px;
     width: 100%;
-    background-image: url(../img/back-tablet.jpg);
-
+    background-image: url(../img/index-back-tablet.jpg);
 
   }
 
   @media(min-width: @desktop-width) {
-   
 
-    background-image: url(../img/back-desktop.jpg);
-
+    background-image: url(../img/index-back-desktop.jpg);
 
   }
 
@@ -39,7 +45,7 @@
     @media(min-width: @tablet-width) {
       position: absolute;
       content: "";
-      background-image: url(../img/intro-triangle-tablet-1.svg);
+      background-image: url(../img/intro-triangle-tablet.svg);
       height: 57px;
       width: 768px;
       bottom: 0;
@@ -48,7 +54,7 @@
     @media(min-width: @desktop-width) {
       position: absolute;
       content: "";
-      background-image: url(../img/intro-triangle-desktop-1.svg);
+      background-image: url(../img/intro-triangle-desktop.svg);
       height: 57px;
       width: @desktop-width;
       bottom: 0;
@@ -58,16 +64,6 @@
 
 }
 
-
-
-.main-container__welcome{
-  display: block;
-  // transform: translate(7%, 30%);
-  margin: 0 auto;
-  @media(min-width: @tablet-width) {
-    display: none;
-  }
-}
 
 .main-container__welcome-tablet, .main-container__welcome-desktop {
   display: none;
@@ -85,4 +81,11 @@
 
   }
 
+}
+
+.main-container__welcome-desktop {
+  @media (min-resolution: 2ddpx) {
+
+    background-size: 1338px auto;
+  }
 }
