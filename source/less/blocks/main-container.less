@@ -34,6 +34,11 @@
 
   }
 
+  @media (min-resolution: 2ddpx) {
+    background-image: url(../img/back-desktop@2px.jpg);
+    background-size: 1338px auto;
+  }
+
   &::after {
     position: absolute;
     content: "";
@@ -73,7 +78,6 @@
   @media (min-width: @tablet-width){
     display: block;
 
-    // transform: translate(33%, 20%);
     margin: 0 auto;
   }
   @media (min-width: @desktop-width){
