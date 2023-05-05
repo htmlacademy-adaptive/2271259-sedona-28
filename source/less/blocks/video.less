@@ -16,38 +16,17 @@
 }
 
 .video__img{
-  display: flex;
+  display: block;
 
   @media (min-width: @tablet-width) {
-    display: none;
+    width: 648px;
+    height: 500px;
   }
   @media (min-width: @desktop-width) {
-    display: none;
+    width: 800px;
   }
 }
 
-.video__img-tablet{
-  display: none;
-
-  @media (min-width: @tablet-width) {
-    display: block;
-  }
-  @media (min-width: @desktop-width) {
-    display: none;
-  }
-}
-
-.video__img-desktop{
-  display: none;
-
-  @media (min-width: @tablet-width) {
-    display: none;
-  }
-  @media (min-width: @desktop-width) {
-    display: block;
-
-  }
-}
 
 .video__title{
   color: @black;
@@ -83,11 +62,11 @@
 
   @media (min-width: @tablet-width) {
     left: 360px;
-    top: 355px;
+    top: 455px;
   }
   @media (min-width: @desktop-width) {
     left: 575px;
-    top: 420px;
+    top: 450px;
   }
 }
 

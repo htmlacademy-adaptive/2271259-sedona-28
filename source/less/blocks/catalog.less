@@ -24,6 +24,12 @@
 
   }
 
+  @media (min-resolution: 2ddpx) {
+    background-image: url(../img/back-desktop@2px.jpg);
+    background-size: 1338px auto;
+  }
+
+
   &::after {
     position: absolute;
     content: "";
@@ -36,7 +42,7 @@
     @media (min-width: @tablet-width) {
       position: absolute;
       content: "";
-      background-image: url(../img/intro-triangle-tablet-1.svg);
+      background-image: url(../img/intro-triangle-tablet.svg);
       width: @tablet-width;
 
 
@@ -44,7 +50,7 @@
     @media (min-width: @desktop-width) {
       position: absolute;
       content: "";
-      background-image: url(../img/intro-triangle-desktop-1.svg);
+      background-image: url(../img/intro-triangle-desktop.svg);
       width: 1200px;
 
     }
