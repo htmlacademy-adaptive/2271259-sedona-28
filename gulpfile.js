@@ -11,7 +11,7 @@ import terser from 'gulp-terser';
 import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
-import del from 'del';
+import {deleteAsync} from 'del';
 
 
 
@@ -50,7 +50,7 @@ export const scripts = () => {
 
 // Images
 
-export const images = () => {
+export const optimizeImages = () => {
   return gulp.src('source/img/**/*.{jpg,png}')
   .pipe(squoosh())
   .pipe(gulp.dest('build/img'))
@@ -106,7 +106,7 @@ export const copy = (done) => {
 
 // Clean
 export const clean = () => {
-  return del ('build')
+  return deleteAsync('build')
 }
 
 // Server
@@ -145,7 +145,7 @@ export const reload = (done) => {
 export const build = gulp.series(
   clean,
   copy,
-  images,
+  optimizeImages,
   gulp.parallel(
     styles,
     html,
