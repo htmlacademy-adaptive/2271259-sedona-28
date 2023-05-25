@@ -56,7 +56,8 @@ export const optimizeImages = () => {
   .pipe(gulp.dest('build/img'))
 
 }
- export const copyImages = () => {
+
+export const copyImages = () => {
   return gulp.src('source/img/**/*.{jpg}')
     .pipe(gulp.dest('build/img'))
 
@@ -121,7 +122,7 @@ const server = (done) => {
     notify: false,
     ui: false,
   });
-  done();
+    done();
 }
 
 // Watcher

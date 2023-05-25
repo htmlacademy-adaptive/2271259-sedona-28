@@ -1,39 +1,35 @@
-.catalog__back-img{
+.catalog__back-img {
   width: @mobile-width;
   min-height: 214px;
-  background-image: url(../img/catalog-back-mobile.jpg);
+  background-image: url("../img/catalog-back-mobile.jpg");
   background-color: @black;
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
 
-
   @media (min-width: @tablet-width) {
     width: @tablet-width;
     min-height: 290px;
-    background-image: url(../img/form-back-tablet.jpg);
-
-
+    background-image: url("../img/form-back-tablet.jpg");
   }
+
   @media (min-width: @desktop-width) {
+
     width: @desktop-width;
 
-    background-image: url(../img/catalog-back-desktop.jpg);
-
-
+    background-image: url("../img/catalog-back-desktop.jpg");
   }
 
-  @media (min-resolution: 2ddpx) {
-    background-image: url(../img/back-desktop@2px.jpg);
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/back-desktop@2x.jpg");
     background-size: 1338px auto;
   }
-
 
   &::after {
     position: absolute;
     content: "";
-    background-image: url(../img/intro-triangle.svg);
+    background-image: url("../img/intro-triangle.svg");
     height: 57px;
     width: 320px;
     bottom: 0;
@@ -42,17 +38,15 @@
     @media (min-width: @tablet-width) {
       position: absolute;
       content: "";
-      background-image: url(../img/intro-triangle-tablet.svg);
+      background-image: url("../img/intro-triangle-tablet.svg");
       width: @tablet-width;
-
-
     }
+
     @media (min-width: @desktop-width) {
       position: absolute;
       content: "";
-      background-image: url(../img/intro-triangle-desktop.svg);
+      background-image: url("../img/intro-triangle-desktop.svg");
       width: 1200px;
-
     }
   }
 }
@@ -65,35 +59,36 @@
   @media (min-width: @tablet-width) {
     display: none;
   }
+
   @media (min-width: @desktop-width) {
     display: none;
   }
 }
 
-.catalog__img-tablet{
+.catalog__img-tablet {
   display: none;
+
   @media (min-width: @tablet-width) {
     display: block;
     margin: 85px auto;
     height: 78px;
-
   }
+
   @media (min-width: @desktop-width) {
     display: none;
   }
 }
 
-.catalog__img-desktop{
+.catalog__img-desktop {
   display: none;
 
   @media (min-width: @tablet-width) {
     display: none;
   }
+
   @media (min-width: @desktop-width) {
     display: block;
     margin: 85px auto;
     height: 78px;
-
   }
 }
-

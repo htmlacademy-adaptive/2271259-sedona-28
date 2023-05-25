@@ -1,12 +1,11 @@
-.main-nav{
+.main-nav {
   width: @mobile-width;
 
-
-
-  @media(min-width: @tablet-width) {
+  @media (min-width: @tablet-width) {
     width: @tablet-width;
   }
-  @media(min-width: @desktop-width) {
+
+  @media (min-width: @desktop-width) {
     width: @desktop-width;
   }
 }
@@ -15,7 +14,7 @@
   position: relative;
 }
 
-.main-nav__menu{
+.main-nav__menu {
 
   display: none;
   position: relative;
@@ -32,8 +31,6 @@
   width: 23px;
   height: 22px;
 
-  background-image: url(../img/icons/icon-menu.svg);
-  background-color: @white;
   border: none;
 
   position: absolute;
@@ -42,25 +39,24 @@
 
   cursor: pointer;
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     opacity: 0.6;
   }
+
   &:active {
     opacity: 0.3;
   }
 
-  @media(min-width: @tablet-width){
+  @media (min-width: @tablet-width) {
     display: none;
   }
-
 }
 
-.main-nav__close-menu{
+.main-nav__close-menu {
   width: 22px;
   height: 22px;
 
-  background-image: url(../img/icons/icon-cross.svg);
-  background-color: @blue;
   border: none;
 
   position: absolute;
@@ -70,19 +66,21 @@
 
   cursor: pointer;
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     opacity: 0.6;
   }
+
   &:active {
     opacity: 0.3;
   }
 
-  @media(min-width: @tablet-width){
+  @media (min-width: @tablet-width) {
     display: none;
   }
 }
 
-.menu--open{
+.menu--open {
   display: block;
 }
 
@@ -90,8 +88,9 @@
   display: none;
 }
 
-.header--no-js{
-  .open-menu, .close-menu {
+.header--no-js {
+  .open-menu,
+  .close-menu {
     display: none;
   }
 
@@ -100,4 +99,3 @@
     position: static;
   }
 }
-
