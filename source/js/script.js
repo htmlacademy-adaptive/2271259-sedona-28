@@ -14,5 +14,3 @@ openMenuBtn.addEventListener('click', function () {
 closeMenuBtn.addEventListener('click', function () {
   menu.classList.remove('menu--open');
 });
-
-

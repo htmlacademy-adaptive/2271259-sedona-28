@@ -1,23 +1,20 @@
-.opinion{
+.opinion {
   margin-top: 36px;
   position: relative;
 
-
   @media (min-width: @tablet-width) {
     width: @tablet-width;
-
   }
+
   @media (min-width: @desktop-width) {
 
     width: @desktop-width;
-
   }
-
 
   &::after {
     position: absolute;
     content: "";
-    background-image: url(../img/photo-divider.svg);
+    background-image: url("../img/photo-divider.svg");
     height: 1px;
     width: 320px;
     bottom: -25px;
@@ -26,12 +23,10 @@
     @media (min-width: @tablet-width) {
       display: none;
     }
-
-
   }
 }
 
-.opinion__title{
+.opinion__title {
 
   .bigText();
 
@@ -39,7 +34,7 @@
   text-transform: uppercase;
 }
 
-.opinion__text{
+.opinion__text {
 
   .smallText();
 
@@ -51,12 +46,13 @@
   @media (min-width: @tablet-width) {
     margin-bottom: 108px;
   }
+
   @media (min-width: @desktop-width) {
     margin-bottom: 68px;
   }
 }
 
-.opinion__br-tablet{
+.opinion__br-tablet {
   display: none;
 
   @media (min-width: @tablet-width) {
